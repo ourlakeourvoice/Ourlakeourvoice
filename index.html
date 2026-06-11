@@ -4,873 +4,501 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cedar Creek Lake — Data Center Water Fight</title>
+<title>Our Lake. Our Voice. | Cedar Creek Lake</title>
+<meta name="description" content="Cedar Creek Lake community research and public records advocacy. Primary source documentation on the proposed data center near Trinidad, Texas.">
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
-–navy: #1a2744;
-–steel: #2e5077;
-–lake: #4a7fa5;
-–pale: #d6e8f4;
-–cream: #f7f4ef;
-–rust: #b84a2e;
-–gold: #c9962a;
-–text: #1c1c1e;
-–muted: #5a6475;
+–deep:#0a1929; –steel:#1e4976; –shore:#2d7db3;
+–gold:#c9962a; –pale:#d6e8f4; –white:#fff;
+–muted:#8aabbc; –rust:#b84a2e; –green:#1e6b3c;
+–cream:#f7f4ef;
 }
 
-- { margin: 0; padding: 0; box-sizing: border-box; }
-
-html { scroll-behavior: smooth; }
-
-body {
-font-family: ‘Source Serif 4’, Georgia, serif;
-background: var(–cream);
-color: var(–text);
-font-size: 17px;
-line-height: 1.7;
-}
-
-/* ── HEADER ── */
-header {
-background: var(–navy);
-color: white;
-padding: 0;
-position: relative;
-overflow: hidden;
-}
-
-.header-inner {
-max-width: 900px;
-margin: 0 auto;
-padding: 60px 32px 48px;
-position: relative;
-z-index: 2;
-}
-
-.eyebrow {
-font-family: ‘Source Serif 4’, serif;
-font-size: 11px;
-font-weight: 600;
-letter-spacing: 0.18em;
-text-transform: uppercase;
-color: var(–pale);
-margin-bottom: 20px;
-display: block;
-}
-
-h1 {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: clamp(32px, 5vw, 54px);
-font-weight: 900;
-line-height: 1.1;
-color: white;
-margin-bottom: 20px;
-}
-
-h1 span {
-color: var(–pale);
-font-style: italic;
-font-weight: 400;
-}
-
-.header-sub {
-font-size: 16px;
-color: rgba(255,255,255,0.75);
-max-width: 560px;
-font-weight: 300;
-font-style: italic;
-}
-
-.header-rule {
-width: 48px;
-height: 2px;
-background: var(–gold);
-margin: 24px 0;
-}
-
-/* Water line decoration */
-.water-line {
-position: absolute;
-bottom: 0;
-left: 0;
-right: 0;
-height: 6px;
-background: linear-gradient(90deg, var(–steel), var(–lake), var(–steel));
-}
-
-/* ── NAV ── */
-nav {
-background: var(–steel);
-position: sticky;
-top: 0;
-z-index: 100;
-border-bottom: 2px solid var(–lake);
-}
-
-nav ul {
-max-width: 900px;
-margin: 0 auto;
-padding: 0 32px;
-list-style: none;
-display: flex;
-flex-wrap: wrap;
-gap: 0;
-}
-
-nav a {
-display: block;
-padding: 14px 18px;
-color: rgba(255,255,255,0.85);
-text-decoration: none;
-font-size: 12px;
-font-weight: 600;
-letter-spacing: 0.12em;
-text-transform: uppercase;
-font-family: ‘Source Serif 4’, serif;
-transition: color 0.2s, background 0.2s;
-}
-
-nav a:hover {
-color: white;
-background: rgba(255,255,255,0.1);
-}
-
-/* ── MAIN ── */
-main {
-max-width: 900px;
-margin: 0 auto;
-padding: 0 32px;
-}
-
-/* ── ALERT BANNER ── */
-.alert {
-background: var(–rust);
-color: white;
-padding: 16px 24px;
-margin: 32px 0;
-border-left: 4px solid #8a2010;
-display: flex;
-align-items: flex-start;
-gap: 14px;
-}
-
-.alert-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
-
-.alert strong { display: block; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
-
-.alert p { font-size: 15px; margin: 0; opacity: 0.92; }
-
-/* ── SECTIONS ── */
-section {
-padding: 52px 0;
-border-bottom: 1px solid #ddd;
-}
-
-section:last-child { border-bottom: none; }
-
-h2 {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 28px;
-font-weight: 700;
-color: var(–navy);
-margin-bottom: 8px;
-line-height: 1.2;
-}
-
-.section-rule {
-width: 32px;
-height: 2px;
-background: var(–gold);
-margin-bottom: 24px;
-}
-
-h3 {
-font-family: ‘Playfair Display’, Georgia, serif;
-font-size: 19px;
-color: var(–navy);
-margin: 28px 0 10px;
-font-weight: 700;
-}
-
-p { margin-bottom: 16px; }
-
-p:last-child { margin-bottom: 0; }
-
-a { color: var(–steel); }
-a:hover { color: var(–navy); }
-
-/* ── STAT CARDS ── */
-.stats {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 16px;
-margin: 28px 0;
-}
-
-.stat-card {
-background: var(–navy);
-color: white;
-padding: 22px 20px;
-position: relative;
-}
-
-.stat-card::before {
-content: ‘’;
-position: absolute;
-top: 0; left: 0; right: 0;
-height: 3px;
-background: var(–gold);
-}
-
-.stat-num {
-font-family: ‘Playfair Display’, serif;
-font-size: 32px;
-font-weight: 900;
-color: var(–pale);
-line-height: 1;
-margin-bottom: 6px;
-}
-
-.stat-label {
-font-size: 12px;
-font-weight: 600;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: rgba(255,255,255,0.65);
-margin-bottom: 4px;
-}
-
-.stat-src {
-font-size: 11px;
-color: rgba(255,255,255,0.4);
-font-style: italic;
-}
-
-/* ── TIMELINE ── */
-.timeline { margin: 24px 0; }
-
-.tl-item {
-display: grid;
-grid-template-columns: 110px 1fr;
-gap: 20px;
-margin-bottom: 20px;
-align-items: start;
-}
-
-.tl-date {
-font-size: 12px;
-font-weight: 600;
-letter-spacing: 0.08em;
-text-transform: uppercase;
-color: var(–steel);
-padding-top: 2px;
-text-align: right;
-border-right: 2px solid var(–pale);
-padding-right: 16px;
-}
-
-.tl-content {
-padding-left: 4px;
-}
-
-.tl-content strong {
-display: block;
-color: var(–navy);
-margin-bottom: 3px;
-font-family: ‘Playfair Display’, serif;
-}
-
-.tl-content p {
-font-size: 15px;
-color: var(–muted);
-margin: 0;
-}
-
-/* ── CALLOUT BOX ── */
-.callout {
-background: var(–pale);
-border-left: 4px solid var(–steel);
-padding: 20px 24px;
-margin: 24px 0;
-}
-
-.callout strong {
-display: block;
-font-size: 12px;
-letter-spacing: 0.12em;
-text-transform: uppercase;
-color: var(–steel);
-margin-bottom: 8px;
-}
-
-.callout p { font-size: 15px; margin: 0; }
-
-/* ── ENTITY LIST ── */
-.entity-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 12px;
-margin: 20px 0;
-}
-
-@media (max-width: 600px) {
-.entity-grid { grid-template-columns: 1fr; }
-.tl-item { grid-template-columns: 80px 1fr; }
-nav ul { gap: 0; }
-nav a { padding: 12px 12px; font-size: 11px; }
-}
-
-.entity-card {
-background: white;
-border: 1px solid #ddd;
-padding: 14px 16px;
-border-top: 3px solid var(–navy);
-}
-
-.entity-card .role {
-font-size: 11px;
-font-weight: 600;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-color: var(–muted);
-margin-bottom: 4px;
-}
-
-.entity-card .name {
-font-family: ‘Playfair Display’, serif;
-font-size: 15px;
-font-weight: 700;
-color: var(–navy);
-margin-bottom: 4px;
-}
-
-.entity-card .detail {
-font-size: 13px;
-color: var(–muted);
-}
-
-/* ── ACTION SECTION ── */
-.action-grid {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 20px;
-margin: 24px 0;
-}
-
-@media (max-width: 600px) { .action-grid { grid-template-columns: 1fr; } }
-
-.action-card {
-background: white;
-border: 1px solid #ddd;
-padding: 20px;
-}
-
-.action-card h4 {
-font-family: ‘Playfair Display’, serif;
-font-size: 16px;
-color: var(–navy);
-margin-bottom: 10px;
-}
-
-.action-card p, .action-card li {
-font-size: 14px;
-color: var(–muted);
-}
-
-.action-card ul { padding-left: 18px; }
-.action-card li { margin-bottom: 4px; }
-
-.action-card .contact-line {
-font-size: 13px;
-font-family: ‘Source Serif 4’, serif;
-font-weight: 600;
-color: var(–steel);
-margin-top: 10px;
-padding-top: 10px;
-border-top: 1px solid #eee;
-}
-
-/* ── DOCUMENTS ── */
-.doc-list { margin: 20px 0; }
-
-.doc-item {
-display: flex;
-align-items: center;
-gap: 14px;
-padding: 14px 0;
-border-bottom: 1px solid #eee;
-}
-
-.doc-item:last-child { border-bottom: none; }
-
-.doc-icon {
-width: 36px;
-height: 36px;
-background: var(–navy);
-color: white;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 14px;
-flex-shrink: 0;
-}
-
-.doc-info { flex: 1; }
-
-.doc-title {
-font-size: 14px;
-font-weight: 600;
-color: var(–navy);
-margin-bottom: 2px;
-}
-
-.doc-meta {
-font-size: 12px;
-color: var(–muted);
-}
-
-.doc-link {
-font-size: 12px;
-font-weight: 600;
-color: var(–steel);
-text-decoration: none;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-flex-shrink: 0;
-}
-
-/* ── FOOTER ── */
-footer {
-background: var(–navy);
-color: rgba(255,255,255,0.6);
-text-align: center;
-padding: 32px;
-font-size: 13px;
-margin-top: 20px;
-}
-
-footer strong { color: white; }
-
-/* ── PRINT ── */
-@media print {
-nav, .alert { display: block; }
-* { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:“DM Sans”,sans-serif;background:#0a1929;color:#fff;font-size:16px;line-height:1.7;}
+
+.hero{min-height:100vh;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 24px;}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,25,41,0.3) 0%,rgba(10,25,41,0.15) 40%,rgba(10,25,41,0.75) 100%),linear-gradient(135deg,#0a1929 0%,#1e4976 30%,#2d7db3 55%,#1e4976 75%,#0a1929 100%);z-index:0;}
+.hero-bg::after{content:””;position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(180deg,transparent 0%,rgba(45,125,179,0.1) 50%,rgba(10,25,41,0.9) 100%);}
+.light-glow{position:absolute;bottom:30%;left:50%;transform:translateX(-50%);width:3px;height:3px;background:#fff;border-radius:50%;box-shadow:0 0 6px 2px rgba(255,255,255,0.9),0 0 20px 6px rgba(255,220,150,0.5),0 0 60px 20px rgba(255,200,100,0.15),0 20px 80px 10px rgba(255,200,100,0.08);z-index:1;}
+.light-reflection{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:2px;height:30%;background:linear-gradient(180deg,rgba(255,200,100,0.08) 0%,transparent 100%);z-index:1;}
+.hero-content{position:relative;z-index:10;text-align:center;max-width:760px;width:100%;}
+.hero-content::before{content:””;display:block;width:48px;height:2px;background:#c9962a;margin:0 auto 28px;}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:#8aabbc;margin-bottom:16px;}
+.hero h1{font-family:“Playfair Display”,serif;font-size:clamp(48px,9vw,84px);font-weight:900;color:#fff;line-height:1.0;margin-bottom:8px;}
+.hero h1 em{font-style:italic;font-weight:400;color:#d6e8f4;}
+.hero-sub{font-size:clamp(14px,2.5vw,17px);color:rgba(255,255,255,0.65);line-height:1.65;font-weight:300;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto;}
+.hero-sub em{color:rgba(255,255,255,0.9);font-style:normal;font-weight:500;}
+.hero-deadline{background:rgba(184,74,46,0.2);border:1px solid rgba(184,74,46,0.4);border-left:3px solid #b84a2e;padding:14px 24px;display:inline-block;margin-bottom:32px;}
+.hdl-label{font-size:9px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#b84a2e;margin-bottom:3px;}
+.hdl-date{font-family:“Playfair Display”,serif;font-size:22px;font-weight:900;color:#fff;margin-bottom:2px;}
+.hdl-note{font-size:10px;color:rgba(255,255,255,0.55);}
+.hero-nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+.hero-nav a{display:inline-block;padding:10px 20px;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.8);transition:all 0.2s;}
+.hero-nav a:hover{border-color:#c9962a;color:#c9962a;}
+.hero-nav a.primary{background:#c9962a;border-color:#c9962a;color:#0a1929;}
+.hero-nav a.primary:hover{background:#d4a535;}
+.scroll-hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:10;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.25);display:flex;flex-direction:column;align-items:center;gap:8px;}
+.scroll-hint::after{content:“↓”;font-size:14px;color:rgba(255,255,255,0.2);}
+
+nav{background:#1e4976;position:sticky;top:0;z-index:100;border-bottom:2px solid #2d7db3;}
+nav ul{max-width:960px;margin:0 auto;padding:0 24px;list-style:none;display:flex;flex-wrap:wrap;gap:0;}
+nav a{display:block;padding:13px 14px;color:rgba(255,255,255,0.8);text-decoration:none;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;transition:color 0.2s,background 0.2s;}
+nav a:hover{color:#fff;background:rgba(255,255,255,0.1);}
+
+main{max-width:960px;margin:0 auto;padding:0 24px;background:#0a1929;}
+section{padding:56px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
+section:last-child{border-bottom:none;}
+h2{font-family:“Playfair Display”,serif;font-size:32px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.2;}
+.section-rule{width:32px;height:2px;background:#c9962a;margin-bottom:24px;}
+h3{font-family:“Playfair Display”,serif;font-size:20px;color:#fff;margin:28px 0 10px;font-weight:700;}
+p{margin-bottom:16px;color:rgba(255,255,255,0.82);}
+p:last-child{margin-bottom:0;}
+a{color:#2d7db3;}
+a:hover{color:#d6e8f4;}
+em{font-style:italic;}
+
+.alert-box{background:#b84a2e;padding:16px 24px;margin:32px 0;display:flex;align-items:flex-start;gap:14px;}
+.alert-icon{font-size:20px;flex-shrink:0;margin-top:2px;}
+.alert-box strong{display:block;font-size:13px;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:4px;color:#fff;}
+.alert-box p{font-size:15px;margin:0;opacity:0.92;color:#fff;}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:24px 0;}
+.stat-card{background:#1e4976;padding:20px 16px;position:relative;}
+.stat-card::before{content:””;position:absolute;top:0;left:0;right:0;height:3px;background:#c9962a;}
+.stat-num{font-family:“Playfair Display”,serif;font-size:30px;font-weight:900;color:#d6e8f4;line-height:1;margin-bottom:6px;}
+.stat-label{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px;}
+.stat-src{font-size:10px;color:rgba(255,255,255,0.25);font-style:italic;}
+
+.demand-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:20px 0;}
+.demand-step{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-top:3px solid #1e4976;padding:12px 10px;text-align:center;}
+.demand-step.current{border-top-color:#1e6b3c;background:rgba(30,107,60,0.12);}
+.demand-step.questioned{border-top-color:#c9962a;}
+.ds-date{font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8aabbc;margin-bottom:5px;}
+.ds-num{font-family:“Playfair Display”,serif;font-size:22px;font-weight:900;color:#d6e8f4;line-height:1;margin-bottom:4px;}
+.ds-num.green{color:#4caf78;}
+.ds-label{font-size:8.5px;color:rgba(255,255,255,0.5);line-height:1.35;}
+
+.callout{background:rgba(255,255,255,0.04);border-left:4px solid #2d7db3;padding:18px 22px;margin:20px 0;}
+.callout .callout-label{font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#2d7db3;margin-bottom:8px;display:block;}
+.callout p{font-size:15px;margin:0;color:rgba(255,255,255,0.82);}
+.callout.gold{border-left-color:#c9962a;}
+.callout.gold .callout-label{color:#c9962a;}
+.callout.green{border-left-color:#4caf78;}
+.callout.green .callout-label{color:#4caf78;}
+
+.pathways{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0;}
+.pathway{padding:16px;border-left:4px solid #2d7db3;}
+.pathway.blocked{border-left-color:#b84a2e;background:rgba(184,74,46,0.08);}
+.pathway.watch{border-left-color:#c9962a;background:rgba(201,150,42,0.08);}
+.pathway.open{border-left-color:#2d7db3;background:rgba(45,125,179,0.08);}
+.pw-status{font-size:8px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:2px 8px;display:inline-block;margin-bottom:8px;}
+.pathway.blocked .pw-status{background:#b84a2e;color:#fff;}
+.pathway.watch .pw-status{background:#c9962a;color:#fff;}
+.pathway.open .pw-status{background:#2d7db3;color:#fff;}
+.pw-title{font-family:“Playfair Display”,serif;font-size:15px;font-weight:700;color:#fff;line-height:1.25;margin-bottom:6px;}
+.pw-body{font-size:13px;color:rgba(255,255,255,0.65);line-height:1.5;}
+.pw-body strong{color:#fff;font-weight:600;}
+
+.entity-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0;}
+.entity-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-top:3px solid #1e4976;padding:16px;}
+.entity-card.highlight{border-top-color:#c9962a;background:rgba(201,150,42,0.06);}
+.ent-role{font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8aabbc;margin-bottom:4px;}
+.ent-name{font-family:“Playfair Display”,serif;font-size:16px;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.2;}
+.ent-detail{font-size:13px;color:#8aabbc;line-height:1.45;}
+.ent-src{font-size:11px;color:rgba(255,255,255,0.25);font-style:italic;margin-top:5px;}
+
+.timeline{margin:24px 0;}
+.tl-item{display:grid;grid-template-columns:110px 1fr;gap:20px;margin-bottom:20px;align-items:start;}
+.tl-date{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#2d7db3;padding-top:2px;text-align:right;border-right:2px solid rgba(255,255,255,0.1);padding-right:16px;}
+.tl-content strong{display:block;color:#fff;margin-bottom:3px;font-family:“Playfair Display”,serif;font-size:16px;}
+.tl-content p{font-size:14px;color:#8aabbc;margin:0;}
+
+.doc-list{margin:20px 0;}
+.doc-item{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
+.doc-item:last-child{border-bottom:none;}
+.doc-icon{width:40px;height:40px;background:#1e4976;color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.doc-info{flex:1;}
+.doc-title{font-size:15px;font-weight:600;color:#fff;margin-bottom:3px;}
+.doc-meta{font-size:12px;color:#8aabbc;}
+.doc-badge{font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 8px;flex-shrink:0;}
+.doc-badge.tier1{background:#1e6b3c;color:#fff;}
+.doc-badge.summary{background:#c9962a;color:#0a1929;}
+
+.action-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0;}
+.action-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-top:3px solid #1e4976;padding:18px;}
+.action-card.priority{border-top-color:#b84a2e;}
+.ac-badge{font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;margin-bottom:8px;display:inline-block;color:#fff;}
+.action-card.priority .ac-badge{background:#b84a2e;}
+.action-card:not(.priority) .ac-badge{background:#1e4976;}
+.action-card h3{font-family:“Playfair Display”,serif;font-size:17px;color:#fff;margin:0 0 6px;font-weight:700;}
+.action-card .when{font-size:12px;font-style:italic;color:#2d7db3;margin-bottom:8px;line-height:1.4;}
+.action-card .why{font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08);line-height:1.5;}
+.action-card .ct{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.7;}
+
+.quote-bar{background:rgba(255,255,255,0.04);border-left:4px solid #c9962a;padding:20px 24px;margin:32px 0;}
+.qm{font-family:“Playfair Display”,serif;font-size:48px;color:#1e4976;line-height:1;float:left;margin-right:12px;margin-top:-8px;}
+.qt{font-family:“Playfair Display”,serif;font-size:15px;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.6;}
+.qs{font-size:11px;color:#8aabbc;margin-top:8px;clear:both;}
+
+footer{background:#1e4976;padding:32px 24px;text-align:center;border-top:2px solid #2d7db3;}
+footer .footer-inner{max-width:960px;margin:0 auto;}
+footer strong{color:#fff;display:block;font-family:“Playfair Display”,serif;font-size:18px;margin-bottom:8px;}
+footer p{font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:4px;}
+
+@media(max-width:600px){
+.pathways{grid-template-columns:1fr;}
+.entity-grid{grid-template-columns:1fr;}
+.action-grid{grid-template-columns:1fr;}
+.demand-grid{grid-template-columns:1fr 1fr;}
+.tl-item{grid-template-columns:80px 1fr;}
+nav a{padding:11px 10px;font-size:10px;}
 }
 </style>
 
 </head>
 <body>
 
-<header>
-  <div class="header-inner">
-    <span class="eyebrow">Cedar Creek Lake · Henderson County · Texas</span>
-    <h1>Your Lake.<br><span>Their Data Center.</span></h1>
-    <div class="header-rule"></div>
-    <p class="header-sub">A proposed hyperscale data center near Trinidad, TX would draw up to 5 million gallons per day from Cedar Creek Lake — permanently. Here is what the public records show.</p>
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="light-glow"></div>
+  <div class="light-reflection"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Cedar Creek Lake &middot; Henderson County, Texas</div>
+    <h1>Our Lake.<br><em>Our Voice.</em></h1>
+    <p class="hero-sub">Cedar Creek Lake community research and public records advocacy &mdash; <em>because nobody asked us.</em></p>
+    <div class="hero-deadline">
+      <div class="hdl-label">&#9203; Critical Deadline</div>
+      <div class="hdl-date">April 15, 2027</div>
+      <div class="hdl-note">WCC MUD water suspension expires &mdash; durable protection needed before this date</div>
+    </div>
+    <div class="hero-nav">
+      <a href="#situation">The Situation</a>
+      <a href="#numbers">The Numbers</a>
+      <a href="#pathways">Water Pathways</a>
+      <a href="#resolution">HC Resolution</a>
+      <a href="#entities">Who&rsquo;s Involved</a>
+      <a href="#documents">Documents</a>
+      <a href="#action" class="primary">Take Action</a>
+    </div>
   </div>
-  <div class="water-line"></div>
-</header>
+  <div class="scroll-hint">Scroll</div>
+</div>
 
 <nav>
   <ul>
-    <li><a href="#situation">The Situation</a></li>
-    <li><a href="#numbers">The Numbers</a></li>
-    <li><a href="#resolution">HC Resolution</a> <a href="#timeline">Timeline</a></li>
-    <li><a href="#entities">Who's Involved</a></li>
+    <li><a href="#situation">Situation</a></li>
+    <li><a href="#numbers">Numbers</a></li>
+    <li><a href="#pathways">Pathways</a></li>
+    <li><a href="#resolution">HC Resolution</a></li>
+    <li><a href="#timeline">Timeline</a></li>
+    <li><a href="#entities">Entities</a></li>
     <li><a href="#covenants">Covenants</a></li>
-    <li><a href="#action">Take Action</a></li>
     <li><a href="#documents">Documents</a></li>
+    <li><a href="#action">Take Action</a></li>
   </ul>
 </nav>
 
 <main>
 
-  <div class="alert">
-    <div class="alert-icon">⏱</div>
+  <div class="alert-box">
+    <div class="alert-icon">&#9203;</div>
     <div>
-      <strong>Critical Deadline</strong>
-      <p>The West Cedar Creek MUD temporary suspension on new high-intensity water commitments expires <strong>April 15, 2027</strong>. Durable protection must be in place before that date. MUD board meets the 4th Monday of each month, 6 PM, 118 S. Southshore Dr, Tool TX.</p>
+      <strong>Critical Deadline &mdash; April 15, 2027</strong>
+      <p>The West Cedar Creek MUD temporary suspension on new high-intensity water commitments expires on this date. Durable protection must be in place before then. The groundwater moratorium expires six months earlier on October 1, 2026. WCC MUD board meets the 4th Monday of each month, 6 PM, 118 S. Southshore Dr, Tool TX.</p>
     </div>
   </div>
-
-  <!-- SITUATION -->
 
   <section id="situation">
     <h2>What Is Happening</h2>
     <div class="section-rule"></div>
-
-```
-<p>A recorded land option covering approximately <strong>1,186 acres near Key Ranch Road, Trinidad, Texas</strong> (Henderson County) was filed August 20, 2025 in Henderson County deed records. The purchaser is Gray Bear Peak Holdings, LLC (Delaware). The developer is <strong>Diode Ventures</strong>, a wholly-owned subsidiary of Black &amp; Veatch (Overland Park, Kansas), a global engineering and construction firm with $4.7 billion in annual revenue.</p>
-
-<p>Diode Ventures approached <strong>West Cedar Creek Municipal Utility District (WCC MUD)</strong> seeking up to <strong>5 million gallons per day</strong> of water from Cedar Creek Lake — water owned by Tarrant Regional Water District (TRWD), which supplies <strong>2.3 million people</strong> across 11 North Texas counties.</p>
-
-<p>WCC MUD filed a formal raw water contract application with TRWD on <strong>March 25, 2026</strong>, explicitly listing the proposed use as <strong>"Data Center."</strong> Under community pressure, the MUD board passed a <strong>temporary suspension</strong> on new high-intensity water commitments on May 21, 2026. That suspension expires April 15, 2027.</p>
-
-<div class="callout">
-  <strong>Why This Matters to You</strong>
-  <p>Cedar Creek Lake is a finite, managed reservoir. It supplies drinking water to Fort Worth, Arlington, Mansfield, and dozens of other communities. The proposed data center's 30-year buildout would draw <strong>1.825 billion gallons per year indefinitely</strong> — a permanent reallocation of a shared public resource, negotiated behind NDAs and shell companies, without public notice or vote.</p>
-</div>
-```
-
+    <p>A recorded land option covering approximately <strong>1,186 acres near Key Ranch Road, Trinidad, Texas</strong> (Henderson County) was filed in Henderson County deed records on August 20, 2025. The purchaser is Gray Bear Peak Holdings, LLC (Delaware). The developer is <strong>Diode Ventures</strong>, a wholly-owned subsidiary of Black &amp; Veatch (Overland Park, Kansas), a global engineering and construction firm with $4.7 billion in annual revenue.</p>
+    <p>Diode Ventures first approached West Cedar Creek Municipal Utility District (WCC MUD) on April 15, 2025 &mdash; immediately requesting the district sign a Non-Disclosure Agreement. <strong>WCC MUD refused.</strong> When Diode subsequently attempted to meet individually with board members before any public meeting, WCC MUD&rsquo;s GM Kenneth Malin insisted all discussions remain in open public meetings.</p>
+    <p>WCC MUD filed a formal raw water contract application with the Tarrant Regional Water District (TRWD) on March 25, 2026, explicitly listing the proposed use type as <strong>&ldquo;Data Center.&rdquo;</strong> Under community pressure, the WCC MUD board passed a <strong>temporary suspension</strong> on new High-Intensity Water Customer commitments on May 21, 2026. That suspension expires April 15, 2027.</p>
+    <p>On June 9, 2026, professional survey trucks from SAM LLC were observed at the Key Ranch Road site. <strong>The project is actively advancing.</strong></p>
+    <div class="callout">
+      <span class="callout-label">Why This Matters</span>
+      <p>Cedar Creek Lake is a finite, managed reservoir owned by TRWD and supplying 2.3 million people across 11 North Texas counties. This transaction was pursued behind NDAs and shell companies with no public meeting, no public notice, and no community input. Nobody asked you.</p>
+    </div>
   </section>
-
-  <!-- NUMBERS -->
 
   <section id="numbers">
     <h2>The Numbers</h2>
     <div class="section-rule"></div>
-
-```
-<div class="stats">
-  <div class="stat-card">
-    <div class="stat-num">5 MGD</div>
-    <div class="stat-label">Water Requested</div>
-    <div class="stat-src">WCC MUD TRWD Application, Mar. 25, 2026</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-num">1.825B</div>
-    <div class="stat-label">Gallons Per Year at Full Buildout</div>
-    <div class="stat-src">WCC MUD TRWD Application, Sec. 3.1</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-num">30 yrs</div>
-    <div class="stat-label">Projected Duration</div>
-    <div class="stat-src">WCC MUD TRWD Application, Sec. 3.1</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-num">$8.5M</div>
-    <div class="stat-label">Buy-In Premium (Data Center to MUD)</div>
-    <div class="stat-src">WCC MUD Application, Sec. 5.1 — $1.7M/MGD × 5</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-num">1,186</div>
-    <div class="stat-label">Acres Under Option</div>
-    <div class="stat-src">Henderson County Instrument 2025-00011938</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-num">2.3M</div>
-    <div class="stat-label">People TRWD Serves</div>
-    <div class="stat-src">TRWD Water Supply, trwd.com</div>
-  </div>
-</div>
-
-<p>The data center would be built in three stages over 12 years. At full buildout, the facility would consume 1.825 billion gallons of Cedar Creek water per year — and that demand would continue through year 30 of the contract and beyond.</p>
-
-<p>The wastewater plan: pre-treated water from the data center would enter WCC MUD's sanitary sewer system and ultimately discharge into the Trinity River. What goes into the lake as a pristine reservoir would return — if at all — as treated industrial discharge downstream.</p>
-```
-
+    <h3>How the Water Demand Figure Evolved</h3>
+    <p>The water demand figure changed significantly as TRWD pushed back on the initial application. All documented in primary source correspondence.</p>
+    <div class="demand-grid">
+      <div class="demand-step">
+        <div class="ds-date">Feb 24, 2026</div>
+        <div class="ds-num">1.5</div>
+        <div class="ds-label">MGD &mdash; Engineer&rsquo;s initial inquiry to TRWD</div>
+      </div>
+      <div class="demand-step questioned">
+        <div class="ds-date">Mar 25, 2026</div>
+        <div class="ds-num">5.0</div>
+        <div class="ds-label">MGD &mdash; Formal TRWD application filed</div>
+      </div>
+      <div class="demand-step questioned">
+        <div class="ds-date">Mar 27, 2026</div>
+        <div class="ds-num">?</div>
+        <div class="ds-label">TRWD questioned 5 MGD &mdash; &ldquo;almost always estimated too high&rdquo;</div>
+      </div>
+      <div class="demand-step current">
+        <div class="ds-date">May 4, 2026</div>
+        <div class="ds-num green">0.8&ndash;1</div>
+        <div class="ds-label">MGD &mdash; Diode dry-cooling engineering response</div>
+      </div>
+    </div>
+    <div class="callout gold">
+      <span class="callout-label">TRWD&rsquo;s Own Words &mdash; March 27, 2026</span>
+      <p>Victoria Cason of TRWD wrote: &ldquo;It is important to note that although customers may begin with a volume in mind, that volume is almost always estimated too high once the data is presented.&rdquo; TRWD was skeptical of the 5 MGD figure before the community even knew about this application.</p>
+    </div>
+    <div class="stats">
+      <div class="stat-card"><div class="stat-num">0.8&ndash;1</div><div class="stat-label">MGD Actual Projected Demand</div><div class="stat-src">Diode engineering response 5/4/26</div></div>
+      <div class="stat-card"><div class="stat-num">80&ndash;150</div><div class="stat-label">Megawatts Continuous Power Draw</div><div class="stat-src">Diode engineering response 5/4/26</div></div>
+      <div class="stat-card"><div class="stat-num">~$9.3M</div><div class="stat-label">TRWD Buy-In at $1,862,171/MGD</div><div class="stat-src">Victoria Cason TRWD email 3/27/26</div></div>
+      <div class="stat-card"><div class="stat-num">30 yrs</div><div class="stat-label">Projected Contract Duration</div><div class="stat-src">WCC MUD App. Sec. 3.1</div></div>
+      <div class="stat-card"><div class="stat-num">2.3M</div><div class="stat-label">People TRWD Already Supplies</div><div class="stat-src">trwd.com</div></div>
+      <div class="stat-card"><div class="stat-num">1,186</div><div class="stat-label">Acres Under Option</div><div class="stat-src">HC Inst. 2025-00011938</div></div>
+    </div>
+    <h3>Impacts That Remain Regardless of Cooling Method</h3>
+    <div class="callout">
+      <span class="callout-label">No Matter the Cooling Method</span>
+      <p><strong style="color:#fff;">Industrial Noise:</strong> Air-cooled systems are louder, not quieter &mdash; continuous low-frequency hum 24/7/365.<br><br>
+      <strong style="color:#fff;">Permanent Light Pollution:</strong> High-intensity perimeter security lighting continuously &mdash; permanently altering dark-sky character.<br><br>
+      <strong style="color:#fff;">ERCOT Grid Stress:</strong> 80&ndash;150 megawatts of continuous power draw increases outage probability during peak heat demand.<br><br>
+      <strong style="color:#fff;">Power Generation Water:</strong> On-site natural gas power generation consumes additional water not yet publicly quantified.<br><br>
+      <strong style="color:#fff;">Property Values:</strong> Real estate agents must disclose known industrial developments. &ldquo;Peaceful lakeside community&rdquo; becomes &ldquo;lake near data center.&rdquo;</p>
+    </div>
   </section>
 
-  <!-- HENDERSON COUNTY RESOLUTION -->
+  <section id="pathways">
+    <h2>Three Water Pathways</h2>
+    <div class="section-rule"></div>
+    <p>The WCC MUD temporary suspension addresses only one of three potential water pathways. The community must watch all three.</p>
+    <div class="pathways">
+      <div class="pathway blocked">
+        <div class="pw-status">&#9888; Temporarily Blocked &mdash; Expires Apr 15, 2027</div>
+        <div class="pw-title">Pathway 1 &mdash; Surface Water via WCC MUD</div>
+        <div class="pw-body">WCC MUD filed formal TRWD application March 25, 2026 for &ldquo;Data Center&rdquo; use. Suspension blocks this path until April 15, 2027. TRWD stands to receive <strong>~$9.3M in buy-in premiums</strong> &mdash; a financial incentive for the lake&rsquo;s owner to approve when suspension expires.</div>
+      </div>
+      <div class="pathway watch">
+        <div class="pw-status">&#128065; Unblocked &mdash; Watch TRWD</div>
+        <div class="pw-title">Pathway 2 &mdash; Direct TRWD Raw Water Contract</div>
+        <div class="pw-body">Developer can <strong>bypass WCC MUD entirely</strong> and approach TRWD directly. No moratorium blocks this. Four recorded covenants restricting water use on this land have not been publicly addressed by TRWD.</div>
+      </div>
+      <div class="pathway open">
+        <div class="pw-status">&#128274; Temporarily Blocked &mdash; Oct 1, 2026</div>
+        <div class="pw-title">Pathway 3 &mdash; Private Groundwater Wells</div>
+        <div class="pw-body">NTVGCD moratorium (May 21, 2026) and permanent court injunction (Anderson County, Oct 23, 2025) block permits over 3,000 ac-ft/year until three mandatory studies complete. <strong>Groundwater reopens six months before the MUD suspension.</strong></div>
+      </div>
+    </div>
+    <div class="callout gold">
+      <span class="callout-label">The Gap That Matters</span>
+      <p>The groundwater moratorium expires October 1, 2026 &mdash; six months before the WCC MUD suspension expires April 15, 2027. That six-month window is currently unaddressed by any community protective action.</p>
+    </div>
+  </section>
 
   <section id="resolution">
     <h2>Henderson County Has Already Acted</h2>
     <div class="section-rule"></div>
-
-```
-<p>Henderson County Commissioners passed a formal resolution at a packed courthouse — the largest crowd Judge Wade McKinney had seen in his 28 years of service. Roughly three dozen residents signed up to speak. The resolution language was read into the court record by County Attorney Kenneth Strawn.</p>
-
-<h3 style="margin-top:24px;margin-bottom:16px;">Resolution Key Passages</h3>
-<p style="font-size:13px;color:#8aabbc;font-style:italic;margin-bottom:20px;">As reported by KETK News and Mabank Monitor · Primary source document being obtained from Henderson County Clerk</p>
-
-<div style="background:rgba(30,107,60,0.15);border-left:4px solid #4caf78;padding:18px 22px;margin-bottom:10px;">
-  <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Water Resources</p>
-  <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">The court formally expresses opposition to using open loop evaporative cooling systems or other high volume potable water consumption technologies in large scale, high continuous load data center facilities within water constrained regions absent demonstrated sustainable supply and mitigation safeguards.</p>
-</div>
-
-<div style="background:rgba(30,107,60,0.15);border-left:4px solid #4caf78;padding:18px 22px;margin-bottom:10px;">
-  <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Community Safeguards</p>
-  <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">The court further opposes any data center development that fails to incorporate adequate safeguards to protect county resources and residents.</p>
-</div>
-
-<div style="background:rgba(30,107,60,0.15);border-left:4px solid #4caf78;padding:18px 22px;margin-bottom:10px;">
-  <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Grid Reliability</p>
-  <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">Support for data centers is conditioned on ensuring grid reliability and protecting ratepayers from increased costs.</p>
-</div>
-
-<div style="background:rgba(30,107,60,0.15);border-left:4px solid #4caf78;padding:18px 22px;margin-bottom:24px;">
-  <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Legislative Action</p>
-  <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">The resolution calls for a halt to new AI data centers pending impact assessments and urges state leadership to grant local governments more authority over infrastructure planning.</p>
-</div>
-
-<h3>The Hill County Warning</h3>
-<p>Hill County commissioners passed a one-year moratorium on data center construction in May 2026. Within weeks, developer RCM Hill LLC filed a federal lawsuit arguing the moratorium was illegal under Texas law — because Texas counties lack broad zoning authority over unincorporated land. On June 4, 2026, Hill County unanimously rescinded the moratorium under legal pressure. One commissioner said simply: <em>"Unfortunately, we tried."</em></p>
-<p>This is why Henderson County's resolution calls for state legislative action rather than a county moratorium — and why the Texas Legislature's June 23, 2026 hearing on data center water use is critically important. State authority is the only durable protection available to communities like Cedar Creek Lake.</p>
-
-<p style="font-size:13px;color:#8aabbc;margin-top:16px;font-style:italic;">Sources: KETK News · Mabank Monitor · CBS19 · KLTV · Full resolution text pending from Henderson County Clerk.</p>
-```
-
+    <p>Henderson County Commissioners passed a formal resolution at a packed courthouse &mdash; the largest crowd Judge Wade McKinney had seen in his 28 years of service. Roughly three dozen residents signed up to speak. The resolution language was read into the court record by County Attorney Kenneth Strawn.</p>
+    <h3>Resolution Key Passages</h3>
+    <p style="font-size:13px;color:#8aabbc;font-style:italic;margin-bottom:20px;">As reported by KETK News and Mabank Monitor &middot; Primary source document being obtained from Henderson County Clerk</p>
+    <div style="background:rgba(30,107,60,0.15);border-left:4px solid #4caf78;padding:18px 22px;margin-bottom:10px;">
+      <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Water Resources</p>
+      <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">The court formally expresses opposition to using open loop evaporative cooling systems or other high volume potable water consumption technologies in large scale, high continuous load data center facilities within water constrained regions absent demonstrated sustainable supply and mitigation safeguards.</p>
+    </div>
+    <div style="background:rgba(30,107,60,0.15);border-left:4px solid #4caf78;padding:18px 22px;margin-bottom:10px;">
+      <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Community Safeguards</p>
+      <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">The court further opposes any data center development that fails to incorporate adequate safeguards to protect county resources and residents.</p>
+    </div>
+    <div style="background:rgba(30,107,60,0.15);border-left:4px solid #4caf78;padding:18px 22px;margin-bottom:10px;">
+      <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Grid Reliability</p>
+      <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">Support for data centers is conditioned on ensuring grid reliability and protecting ratepayers from increased costs.</p>
+    </div>
+    <div style="background:rgba(30,107,60,0.15);border-left:4px solid #4caf78;padding:18px 22px;margin-bottom:24px;">
+      <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Legislative Action</p>
+      <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">The resolution calls for a halt to new AI data centers pending impact assessments and urges state leadership to grant local governments more authority over infrastructure planning.</p>
+    </div>
+    <h3>The Hill County Warning</h3>
+    <p>Hill County commissioners passed a one-year moratorium on data center construction in May 2026. Within weeks, developer RCM Hill LLC filed a federal lawsuit arguing the moratorium was illegal under Texas law. On June 4, 2026, Hill County unanimously rescinded the moratorium. One commissioner said: <em>&ldquo;Unfortunately, we tried.&rdquo;</em></p>
+    <p>This is why Henderson County&rsquo;s resolution calls for state legislative action rather than a county moratorium &mdash; and why the Texas Legislature&rsquo;s June 23, 2026 hearing on data center water use is critically important.</p>
+    <p style="font-size:13px;color:#8aabbc;margin-top:16px;font-style:italic;">Sources: KETK News &middot; Mabank Monitor &middot; CBS19 &middot; KLTV &middot; Full resolution text pending from Henderson County Clerk.</p>
   </section>
-
-  <!-- TIMELINE -->
 
   <section id="timeline">
-    <h2>How We Got Here</h2>
+    <h2>Timeline from Public Records</h2>
     <div class="section-rule"></div>
-
-```
-<div class="timeline">
-  <div class="tl-item">
-    <div class="tl-date">Jan–Dec 2023</div>
-    <div class="tl-content">
-      <strong>Land Assembled Quietly</strong>
-      <p>NRI Land Co. LLC acquires Key Ranch Road parcels (Juan Garcia Survey A-240, Jonathan Ping Survey A-608) in two Henderson County transactions.</p>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-date">Jan&ndash;Dec 2023</div><div class="tl-content"><strong>Land Quietly Assembled</strong><p>NRI Land Co. LLC acquires Key Ranch Road parcels in two Henderson County transactions. No public notice.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Apr 15, 2025</div><div class="tl-content"><strong>Diode Ventures First Contact</strong><p>Diode approaches WCC MUD about wastewater disposal. Refuses to share exact location. Requests NDA. WCC MUD refuses.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Apr 15, 2025</div><div class="tl-content"><strong>Klein Syndicate Takes Title</strong><p>Four limited partnerships controlled by David Klein / Klein Equities LLC (Spring TX) acquire the Key Ranch Road parcels.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Aug 20, 2025</div><div class="tl-content"><strong>Option Agreement Recorded</strong><p>Gray Bear Peak Holdings LLC (Delaware, formed June 12, 2024) records purchase option on ~1,186 acres. HC Instrument No. 2025-00011938.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Jul 2025</div><div class="tl-content"><strong>Diode Attempts Private Board Lobbying</strong><p>Diode requests individual meetings with each WCC MUD board member. GM Kenneth Malin insists all discussions remain in open public meetings per attorney&rsquo;s advice.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Oct 23, 2025</div><div class="tl-content"><strong>Permanent Court Injunction</strong><p>369th District Court, Anderson County issues Final Judgment and Permanent Injunction in Sanderson Farms et al. v. NTVGCD blocking groundwater permits over 3,000 ac-ft/year until three mandatory studies complete.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Feb 24, 2026</div><div class="tl-content"><strong>Engineer Asks TRWD About 1.5 MGD</strong><p>Scott Campbell of Velvin &amp; Weeks asks TRWD about water availability for &ldquo;a data center proposed in Tool TX&rdquo; &mdash; initially referencing 1.5 MGD.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Mar 25, 2026</div><div class="tl-content"><strong>Formal Water Application Filed</strong><p>WCC MUD files TRWD Prospective Raw Water Customer application. Use type: &ldquo;Data Center.&rdquo; Requests 5.0 MGD. Includes 30-year demand projections.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Mar 27, 2026</div><div class="tl-content"><strong>TRWD Questions the 5 MGD Figure</strong><p>Victoria Cason at TRWD requires more data &mdash; noting such requests are &ldquo;almost always estimated too high.&rdquo; Confirms buy-in rate of $1,862,171 per MGD flowing to TRWD.</p></div></div>
+      <div class="tl-item"><div class="tl-date">May 4, 2026</div><div class="tl-content"><strong>Diode Engineering Response &mdash; Dry Cooling</strong><p>Diode responds with dry-cooling technology, approximately 0.8&ndash;1 MGD actual demand, and 80&ndash;150 megawatts continuous power draw using behind-the-meter natural gas generation.</p></div></div>
+      <div class="tl-item"><div class="tl-date">May 2026</div><div class="tl-content"><strong>Henderson County Commissioners Resolution</strong><p>Packed courthouse &mdash; largest crowd in Judge McKinney&rsquo;s 28 years. Commissioners pass formal resolution opposing high-volume water consumption data centers in water-constrained regions. Calls for state legislative action.</p></div></div>
+      <div class="tl-item"><div class="tl-date">May 21, 2026</div><div class="tl-content"><strong>Dual Suspensions &mdash; Same Day</strong><p>WCC MUD passes temporary suspension (expires April 15, 2027). NTVGCD passes Resolution 2026-001 groundwater moratorium (expires October 1, 2026). Both passed same day under community pressure.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Jun 9, 2026</div><div class="tl-content"><strong>Surveyors Observed On Site</strong><p>SAM LLC professional survey trucks observed at Key Ranch Road site. Survey work precedes deed transfer, financing, or permitting. Project actively advancing.</p></div></div>
     </div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-date">Apr 15, 2025</div>
-    <div class="tl-content">
-      <strong>Klein Syndicate Takes Title</strong>
-      <p>Four LPs controlled by David Klein / Klein Equities LLC (Spring, TX) acquire the parcels from NRI Land Co. LLC.</p>
-    </div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-date">Aug 20, 2025</div>
-    <div class="tl-content">
-      <strong>Option Agreement Recorded</strong>
-      <p>Gray Bear Peak Holdings LLC (Delaware) records a purchase option on ~1,186 acres. Henderson County Instrument No. 2025-00011938. Developer identified: Diode Ventures / Black &amp; Veatch.</p>
-    </div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-date">Mar 25, 2026</div>
-    <div class="tl-content">
-      <strong>Formal Water Application Filed</strong>
-      <p>WCC MUD files TRWD Prospective Raw Water Customer application explicitly listing use type as "Data Center." Requests 5.0 MGD additional capacity; 30-year buildout to 1.825 billion gallons per year.</p>
-    </div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-date">May 21, 2026</div>
-    <div class="tl-content">
-      <strong>MUD Suspension Passed</strong>
-      <p>WCC MUD board adopts temporary resolution suspending new service commitments to "High-Intensity Water Customers" (projects exceeding 250,000 gallons/day). Expires April 15, 2027.</p>
-    </div>
-  </div>
-  <div class="tl-item">
-    <div class="tl-date">Now</div>
-    <div class="tl-content">
-      <strong>The Clock Is Running</strong>
-      <p>The suspension bought time — not a permanent answer. Community members discovered this transaction through their own research. TRWD has received a PIA request for all related records.</p>
-    </div>
-  </div>
-</div>
-```
-
   </section>
-
-  <!-- ENTITIES -->
 
   <section id="entities">
     <h2>Who Is Involved</h2>
     <div class="section-rule"></div>
-
-```
-<p>This transaction was structured through multiple layers of shell companies and NDAs. The following entities are confirmed through Henderson County public records and formal regulatory filings.</p>
-
-<div class="entity-grid">
-  <div class="entity-card">
-    <div class="role">Developer</div>
-    <div class="name">Diode Ventures</div>
-    <div class="detail">Wholly-owned subsidiary of Black &amp; Veatch. Overland Park, Kansas. $4.7B annual revenue (2023). Specializes in hyperscale data center land development.</div>
-  </div>
-  <div class="entity-card">
-    <div class="role">Option Holder</div>
-    <div class="name">Gray Bear Peak Holdings LLC</div>
-    <div class="detail">Delaware LLC. Signed by Richard Winterman. Notarized Johnson County KS. Legal counsel: Lear &amp; Lear PLLC, Salt Lake City UT.</div>
-  </div>
-  <div class="entity-card">
-    <div class="role">Current Landowners</div>
-    <div class="name">Klein Syndicate</div>
-    <div class="detail">KC 5 Dittmar LP, KC 2 Cypress Creek LP, DDSMK Ltd., APITX 96 LLC — all controlled by David Klein, Klein Equities LLC, Spring TX.</div>
-  </div>
-  <div class="entity-card">
-    <div class="role">Water Intermediary</div>
-    <div class="name">West Cedar Creek MUD</div>
-    <div class="detail">Tool, TX. Kenneth Malin, General Manager. Board President: Wanda Sanders. Filed the TRWD water application; data center agreed to pay $1.7M/MGD buy-in to MUD.</div>
-  </div>
-  <div class="entity-card">
-    <div class="role">Lake Owner</div>
-    <div class="name">Tarrant Regional Water District</div>
-    <div class="detail">Fort Worth. Owns Cedar Creek Lake. Supplies 2.3M people. Has received formal raw water application and community PIA request. Must approve any new contract.</div>
-  </div>
-  <div class="entity-card">
-    <div class="role">Prior Owner</div>
-    <div class="name">Key Family / NRI Land Co.</div>
-    <div class="detail">Key family held land since 1995 partition. NRI Land Co. LLC acquired Jan &amp; Dec 2023; sold to Klein syndicate April 2025. NRI's principals remain uninvestigated.</div>
-  </div>
-</div>
-
-<p style="font-size:14px; color: var(--muted); margin-top: 16px;"><em>Note: As of June 2026, Henderson County CAD still shows the Klein entities as owners — the option has not yet been exercised. The deal is not done.</em></p>
-```
-
+    <p>All entities confirmed through Henderson County public records, filed regulatory documents, and Delaware Secretary of State records.</p>
+    <div class="entity-grid">
+      <div class="entity-card highlight">
+        <div class="ent-role">Developer</div>
+        <div class="ent-name">Diode Ventures / Black &amp; Veatch</div>
+        <div class="ent-detail">Wholly-owned Black &amp; Veatch subsidiary. $4.7B annual revenue. Overland Park, Kansas. First contacted WCC MUD April 15, 2025.</div>
+        <div class="ent-src">Confirmed via WCC MUD communications</div>
+      </div>
+      <div class="entity-card">
+        <div class="ent-role">Option Holder &mdash; Delaware Shell Company</div>
+        <div class="ent-name">Gray Bear Peak Holdings LLC</div>
+        <div class="ent-detail">Delaware LLC formed June 12, 2024. Signed by Richard Winterman. Legal counsel: Lear &amp; Lear PLLC, Salt Lake City UT. Option not yet exercised as of June 2026.</div>
+        <div class="ent-src">HC Instrument No. 2025-00011938 &middot; Delaware SOS</div>
+      </div>
+      <div class="entity-card">
+        <div class="ent-role">Current Landowners (Option Not Yet Exercised)</div>
+        <div class="ent-name">Klein Syndicate</div>
+        <div class="ent-detail">KC 5 Dittmar LP, KC 2 Cypress Creek LP, DDSMK Ltd., APITX 96 LLC &mdash; all controlled by David Klein, Klein Equities LLC, Spring TX.</div>
+        <div class="ent-src">HC deed records &middot; Henderson County CAD June 2026</div>
+      </div>
+      <div class="entity-card">
+        <div class="ent-role">Water Intermediary</div>
+        <div class="ent-name">West Cedar Creek MUD</div>
+        <div class="ent-detail">821 S. Tool Drive, Tool TX. GM: Kenneth Malin. Filed formal TRWD water application March 25, 2026. Refused NDAs. Insisted on open meetings. Passed temporary suspension May 21, 2026.</div>
+        <div class="ent-src">WCC MUD TRWD Application &middot; Public records</div>
+      </div>
+      <div class="entity-card">
+        <div class="ent-role">Lake Owner &mdash; Must Approve Any Raw Water Contract</div>
+        <div class="ent-name">Tarrant Regional Water District (TRWD)</div>
+        <div class="ent-detail">800 E. Northside Drive, Fort Worth TX. Owns Cedar Creek Lake. Supplies 2.3 million people. Questioned the 5 MGD figure. Stands to receive ~$9.3M in buy-in premiums.</div>
+        <div class="ent-src">trwd.com &middot; Victoria Cason email 3/27/26</div>
+      </div>
+      <div class="entity-card">
+        <div class="ent-role">WCC MUD Engineer of Record</div>
+        <div class="ent-name">Velvin &amp; Weeks / Scott Campbell</div>
+        <div class="ent-detail">Civil engineering firm, Tyler TX. Scott Campbell filed the TRWD application on WCC MUD&rsquo;s behalf March 25, 2026.</div>
+        <div class="ent-src">TRWD-WCC MUD email chain 2/24&ndash;3/27/26</div>
+      </div>
+    </div>
   </section>
-
-  <!-- COVENANTS -->
 
   <section id="covenants">
     <h2>Recorded Water Covenants</h2>
     <div class="section-rule"></div>
-
-```
-<p>Henderson County deed records contain four agreements between the Tarrant County Water Control and Improvement District No. 1 (predecessor to TRWD) and prior Key Ranch Road landowners. These covenants are listed as encumbrances in the current chain of title (Instrument No. 2025-00018559) and run with the land, binding all successors and assigns.</p>
-
-<div class="callout">
-  <strong>What the Covenants Restrict</strong>
-  <p>The recorded agreements restrict water use on these parcels to <strong>irrigation and stock water only</strong>, prohibit sale of water to third parties, and bind all successors and assigns. They arose from litigation (Case No. 64-195, Third Judicial District, Henderson County) over damages caused by Cedar Creek dam construction.</p>
-</div>
-
-<h3>The Four Recorded Instruments</h3>
-<p>Volume 588, Page 495 · Volume 588, Page 543 · Volume 597, Page 36 · Volume 1061, Pages 135 and 144 — Henderson County Deed Records</p>
-
-<p>Gray Bear Peak's attorneys are aware these covenants exist — they are listed in Exhibit B of the recorded deed. The unanswered public question: <strong>Has TRWD been asked whether these covenants bar industrial water use on this land?</strong> A Texas Public Information Act request to TRWD covering this question has been filed by community members.</p>
-
-<p style="font-size: 14px; color: var(--muted);"><em>Community advocates note the covenants as documented encumbrances raising unresolved questions. Determinations of current legal enforceability require qualified legal counsel.</em></p>
-```
-
-  </section>
-
-  <!-- GROUNDWATER NOTE -->
-
-  <section>
-    <h2>The Groundwater Gap</h2>
-    <div class="section-rule"></div>
-
-```
-<p>The WCC MUD suspension addresses surface water from Cedar Creek Lake. It does not address groundwater. Under Texas's "rule of capture," a landowner may pump groundwater beneath their land with limited restriction. A data center drilling its own wells on the 1,186-acre parcel would bypass the MUD, TRWD, and the recorded covenants entirely.</p>
-
-<p>Henderson County falls within the <strong>Pineywoods Groundwater Conservation District (PGCD)</strong>. Community members are monitoring PGCD for any well permit applications on or near the Key Ranch Road parcels. No such applications have been publicly identified as of this writing.</p>
-
-<p>The Carrizo-Wilcox Aquifer — the same formation underlying this area — is the subject of active and contested groundwater permit litigation in adjacent Anderson County. The groundwater pathway remains open and unaddressed by current public regulatory action.</p>
-```
-
-  </section>
-
-  <!-- TEXAS CONTEXT -->
-
-  <section>
-    <h2>You Are Not Alone</h2>
-    <div class="section-rule"></div>
-    <p>Texas communities across the state are grappling with data center water demands. In each case, the question is the same: who decides how a finite public resource is allocated — and who was in the room when it happened?</p>
-
-```
-<div class="callout">
-  <strong>Texas Precedents</strong>
-  <p><strong>Brazoria County</strong> — Commissioners Court voted 5-0 to oppose a hyperscale data center water agreement after community pressure.<br><br>
-  <strong>San Marcos</strong> — City Council voted 5-2 to reject a data center water contract citing long-term supply concerns.<br><br>
-  <strong>Hood County</strong> — Enacted a moratorium on large industrial water use pending regional study.</p>
-</div>
-
-<p>In each case, organized community voices presenting documented facts changed the outcome. The water suspension at WCC MUD was itself a response to community pressure after this transaction was discovered through public records research.</p>
-```
-
-  </section>
-
-  <!-- ACTION -->
-
-  <section id="action">
-    <h2>What You Can Do</h2>
-    <div class="section-rule"></div>
-
-```
-<div class="action-grid">
-  <div class="action-card">
-    <h4>Attend WCC MUD Meetings</h4>
-    <p>The MUD board is the primary decision-maker. Show up. Speak during public comment. The suspension expires April 15, 2027 — the community needs to be present at every meeting between now and then.</p>
-    <div class="contact-line">4th Monday · 6 PM · 118 S. Southshore Dr, Tool TX<br>(903) 432-3704 · KMalin@wccmud.com<br>relations@wccmud.com · wccmud.com</div>
-  </div>
-  <div class="action-card">
-    <h4>Contact TRWD</h4>
-    <p>TRWD owns the lake and must approve any new raw water contract. Their elected board needs to hear from Cedar Creek Lake residents — not just Fort Worth ratepayers.</p>
-    <div class="contact-line">800 E. Northside Dr, Fort Worth TX 76102 · (817) 335-2491<br>Board: board@trwd.com · trwd.com/boardcontact<br>PIA: records@trwd.com · trwd.justfoia.com</div>
-  </div>
-  <div class="action-card">
-    <h4>Contact Henderson County</h4>
-    <p>Commissioners Court meets every Tuesday, 9 AM, 125 N. Prairieville, Athens TX. All five court members should know this issue.</p>
-    <div class="contact-line">
-      Judge McKinney: countyjudgesoffice@hendersoncounty.com · (903) 675-6120<br>
-      Pct. 1 Spivey: wspivey@henderson-county.com · (903) 489-1665<br>
-      Pct. 2 Tuley: (903) 425-2611<br>
-      Pct. 3 McHam: (903) 676-6317<br>
-      Pct. 4 Richardson: mrichardson@henderson-county.com · (903) 676-4054
+    <p>Henderson County deed records contain four agreements between the Tarrant County Water Control and Improvement District No. 1 (predecessor to TRWD) and prior Key Ranch Road landowners. These covenants are listed as encumbrances in the current chain of title and run with the land, binding all successors and assigns.</p>
+    <div class="callout green">
+      <span class="callout-label">What the Covenants Restrict</span>
+      <p>The recorded agreements restrict water use on these parcels to irrigation and stock water only, prohibit sale of water to third parties, and bind all successors and assigns. Gray Bear Peak&rsquo;s attorneys are aware &mdash; they are listed in Exhibit B of the recorded deed.</p>
     </div>
-  </div>
-  <div class="action-card">
-    <h4>Contact State Legislators</h4>
-    <p>Texas legislators have authority over groundwater law, water district governance, and industrial water use policy. Henderson County is in both districts.</p>
-    <div class="contact-line">
-      Rep. Brian Harrison HD-10: (512) 463-0516<br>brian.harrison@house.texas.gov<br>
-      Sen. Robert Nichols SD-3: (512) 463-0103<br>robert.nichols@senate.texas.gov
+    <h3>The Four Recorded Instruments</h3>
+    <p>Volume 588, Page 495 &middot; Volume 588, Page 543 &middot; Volume 597, Page 36 &middot; Volume 1061, Pages 135 and 144 &mdash; all Henderson County Deed Records.</p>
+    <div class="callout">
+      <span class="callout-label">The Unanswered Public Question</span>
+      <p>Has TRWD been asked whether these covenants bar industrial water use on this land? A Texas Public Information Act request covering this question has been filed with TRWD. Response due approximately June 24, 2026.</p>
     </div>
-  </div>
-</div>
-```
-
+    <p style="font-size:13px;color:#8aabbc;margin-top:16px;font-style:italic;">Note: Community advocates note the covenants as documented encumbrances raising unresolved questions. Determinations of current legal enforceability require qualified legal counsel.</p>
   </section>
-
-  <!-- DOCUMENTS -->
 
   <section id="documents">
     <h2>Primary Source Documents</h2>
     <div class="section-rule"></div>
-    <p>All claims on this site are sourced to public records. The following documents are available for public review.</p>
-
-```
-<div class="doc-list">
-  <div class="doc-item">
-    <div class="doc-icon">📄</div>
-    <div class="doc-info">
-      <div class="doc-title">Henderson County Instrument No. 2025-00011938</div>
-      <div class="doc-meta">Memorandum of Real Estate Purchase Option Agreement · Gray Bear Peak Holdings LLC · Recorded Aug. 20, 2025</div>
+    <p>All claims on this site are sourced to public records. Tier 1 documents are primary sources in hand. Tier 2 documents are summaries pending full document confirmation.</p>
+    <div class="doc-list">
+      <div class="doc-item"><div class="doc-icon">&#128196;</div><div class="doc-info"><div class="doc-title">Henderson County Instrument No. 2025-00011938</div><div class="doc-meta">Memorandum of Real Estate Purchase Option Agreement &middot; Gray Bear Peak Holdings LLC &middot; Recorded August 20, 2025</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#128196;</div><div class="doc-info"><div class="doc-title">Henderson County Instrument No. 2025-00018559</div><div class="doc-meta">Special Warranty Deed &middot; Lists four TCWCID No. 1 covenants as encumbrances &middot; Recorded December 31, 2025</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#128203;</div><div class="doc-info"><div class="doc-title">WCC MUD TRWD Prospective Raw Water Customer Application</div><div class="doc-meta">Dated March 25, 2026 &middot; Use type: &ldquo;Data Center&rdquo; &middot; 5.0 MGD request &middot; 30-year demand projections</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#9993;</div><div class="doc-info"><div class="doc-title">TRWD&ndash;WCC MUD Email Correspondence</div><div class="doc-meta">February 24 &ndash; March 27, 2026 &middot; Victoria Cason (TRWD), Scott Campbell (Velvin &amp; Weeks), Kenneth Malin (WCC MUD) &middot; Confirms buy-in rate, TRWD skepticism of 5 MGD</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#9878;</div><div class="doc-info"><div class="doc-title">TCWCID No. 1 Recorded Covenants &mdash; Four Instruments</div><div class="doc-meta">Henderson County Deed Records &middot; Vol. 588/495, 588/543, 597/36, 1061/135 &amp; 144 &middot; Water use restricted to irrigation and stock water only</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#128220;</div><div class="doc-info"><div class="doc-title">NTVGCD Resolution and Order No. 2026-001</div><div class="doc-meta">Adopted May 21, 2026 &middot; Groundwater drilling permit moratorium through at least October 1, 2026</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#9878;</div><div class="doc-info"><div class="doc-title">Final Judgment and Permanent Injunction &mdash; Sanderson Farms et al. v. NTVGCD</div><div class="doc-meta">Cause No. DCCV25-5642-369 &middot; 369th Judicial District, Anderson County &middot; Signed October 23, 2025</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#127962;</div><div class="doc-info"><div class="doc-title">Delaware Secretary of State &mdash; Gray Bear Peak Holdings LLC</div><div class="doc-meta">File No. 3920904 &middot; Formation date: June 12, 2024 &middot; Registered agent: The Corporation Trust Company, Wilmington DE</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#128203;</div><div class="doc-info"><div class="doc-title">Henderson County Commissioners Court Resolution</div><div class="doc-meta">May 2026 &middot; Formally opposes high-volume water consumption data centers in water-constrained regions &middot; Calls for state legislative action &middot; Primary source document pending from clerk</div></div><span class="doc-badge summary">Tier 2</span></div>
+      <div class="doc-item"><div class="doc-icon">&#128203;</div><div class="doc-info"><div class="doc-title">WCC MUD FOIA Response Summary &mdash; 73 Pages</div><div class="doc-meta">Internal WCC MUD&ndash;Diode Ventures communications April 2025 &ndash; May 2026 &middot; Full document being obtained</div></div><span class="doc-badge summary">Tier 2 &mdash; Summary</span></div>
     </div>
-    <a href="#" class="doc-link">View</a>
-  </div>
-  <div class="doc-item">
-    <div class="doc-icon">📄</div>
-    <div class="doc-info">
-      <div class="doc-title">Henderson County Instrument No. 2025-00018559</div>
-      <div class="doc-meta">Special Warranty Deed · APITX 96 LLC to KC 5 Dittmar LP · Recorded Dec. 31, 2025 · Lists four TCWCID covenants as encumbrances</div>
-    </div>
-    <a href="#" class="doc-link">View</a>
-  </div>
-  <div class="doc-item">
-    <div class="doc-icon">📋</div>
-    <div class="doc-info">
-      <div class="doc-title">WCC MUD TRWD Prospective Raw Water Customer Application</div>
-      <div class="doc-meta">Dated March 25, 2026 · Use type: "Data Center" · 5.0 MGD request · 30-year demand projections</div>
-    </div>
-    <a href="#" class="doc-link">View</a>
-  </div>
-  <div class="doc-item">
-    <div class="doc-icon">⚖️</div>
-    <div class="doc-info">
-      <div class="doc-title">TCWCID No. 1 Recorded Covenants (4 instruments)</div>
-      <div class="doc-meta">Henderson County Deed Records · Vol. 588/495, 588/543, 597/36, 1061/135 &amp; 144 · Water use restricted to irrigation and stock water</div>
-    </div>
-    <a href="#" class="doc-link">View</a>
-  </div>
-  <div class="doc-item">
-    <div class="doc-icon">📬</div>
-    <div class="doc-info">
-      <div class="doc-title">Texas PIA Request to TRWD</div>
-      <div class="doc-meta">Submitted June 2026 · Five specific requests covering covenant review, developer correspondence, and water contracts</div>
-    </div>
-    <a href="#" class="doc-link">View</a>
-  </div>
-</div>
-
-<p style="font-size: 14px; color: var(--muted); margin-top: 20px;"><em>Documents are public records obtained from Henderson County Clerk, Henderson County CAD, and Texas agency filings. Copies available upon request.</em></p>
-```
-
+    <p style="font-size:13px;color:#8aabbc;margin-top:20px;font-style:italic;">All Tier 1 documents are public records. Copies available upon request at info@ourlakeourvoice.com</p>
   </section>
+
+  <section id="action">
+    <h2>What You Can Do</h2>
+    <div class="section-rule"></div>
+    <div class="action-grid">
+      <div class="action-card priority">
+        <div class="ac-badge">Primary Chokepoint</div>
+        <h3>WCC MUD Board &mdash; 4th Monday Monthly</h3>
+        <div class="when">6:00 PM &middot; 118 S. Southshore Dr, Tool TX 75143</div>
+        <div class="why">MUD must approve any surface water contract. The suspension expires April 15, 2027. Attend every meeting. Speak during public comment.</div>
+        <div class="ct">&#128222; (903) 432-3704<br>&#9993; KMalin@wccmud.com<br>&#9993; relations@wccmud.com<br>Board President: Wanda Sanders</div>
+      </div>
+      <div class="action-card priority">
+        <div class="ac-badge">Owns the Lake</div>
+        <h3>Tarrant Regional Water District</h3>
+        <div class="when">Elected board &middot; Must approve any raw water contract &middot; 800 E. Northside Dr, Fort Worth TX</div>
+        <div class="why">TRWD owns Cedar Creek Lake and stands to receive ~$9.3M in buy-in premiums. Four recorded covenants on this land have not been publicly addressed. Their board needs to hear from lake residents.</div>
+        <div class="ct">&#128222; (817) 335-2491<br>&#9993; board@trwd.com<br>&#9993; records@trwd.com (PIA)<br>&#127760; trwd.justfoia.com<br>TRWD Open House: June 23 &middot; 5:30&ndash;7:30 PM</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-badge">June 17 &mdash; This Week</div>
+        <h3>Tool City Council Special Meeting</h3>
+        <div class="when">1:00 PM &middot; Oran White Civic Center, Tool TX &middot; Agenda Item #7: Data Centers</div>
+        <div class="why">Non-residents welcome. Sign up to speak on arrival. Arrive 30 minutes early. Every voice on the record matters.</div>
+        <div class="ct">Arrive early to sign public comment sheet<br>Non-residents explicitly welcome</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-badge">June 23 &mdash; Austin</div>
+        <h3>Texas House Natural Resources Hearing</h3>
+        <div class="when">10:00 AM &middot; Room E2.036, Texas Capitol, Austin &middot; Data Center Water Use and Conservation</div>
+        <div class="why">Submit public comment online &mdash; you do not need to attend in person. The committee is examining data center water use in water-stressed Texas regions. Your testimony matters.</div>
+        <div class="ct">&#127760; comments.house.texas.gov/home?c=c390<br>Select: Data Center Water Use and Conservation<br>Submit before hearing adjourns June 23</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-badge">July 7 &mdash; Kaufman</div>
+        <h3>Kaufman Forward P&amp;Z Meeting</h3>
+        <div class="when">6:00 PM &middot; 209 S. Washington Street, Kaufman TX &middot; Highway 175 corridor land use</div>
+        <div class="why">The Future Land Use Plan being adopted July 7 governs the Highway 175 corridor approaching Cedar Creek Lake from Dallas for the next 20 years.</div>
+        <div class="ct">&#128222; Kaufman Planning: (972) 932-2216<br>&#127760; kaufmantx.portal.civicclerk.com<br>Agenda posted after July 2</div>
+      </div>
+      <div class="action-card">
+        <div class="ac-badge">County Government</div>
+        <h3>Henderson County Commissioners</h3>
+        <div class="when">Every Tuesday &middot; 9:00 AM &middot; 125 N. Prairieville, Athens TX 75751</div>
+        <div class="why">Commissioners have already passed a resolution calling for state action. Support them and urge them to hold the line.</div>
+        <div class="ct">Judge McKinney: countyjudgesoffice@hendersoncounty.com &middot; (903) 675-6120<br>Pct.1 Spivey: wspivey@henderson-county.com &middot; (903) 489-1665<br>Pct.2 Tuley: (903) 425-2611<br>Pct.3 McHam: (903) 676-6317<br>Pct.4 Richardson: mrichardson@henderson-county.com &middot; (903) 676-4054</div>
+      </div>
+    </div>
+    <div class="callout gold" style="margin-top:24px;">
+      <span class="callout-label">File Your Own Free Texas PIA Request</span>
+      <p>Under Texas Government Code Chapter 552, any resident can request all correspondence, applications, and agreements that TRWD has received from data center developers. Free for requests under $40. TRWD must respond within 10 business days. Submit at <strong style="color:#fff;">trwd.justfoia.com</strong> or email <strong style="color:#fff;">records@trwd.com</strong>.</p>
+    </div>
+  </section>
+
+  <div class="quote-bar">
+    <div class="qm">&ldquo;</div>
+    <div class="qt">Every claim on this site is drawn directly from recorded Henderson County deed instruments, formal regulatory filings, court orders, and official public records &mdash; all available for independent verification by anyone.</div>
+    <div class="qs">Our Lake Our Voice &middot; Cedar Creek Lake, Texas &middot; ourlakeourvoice.com &middot; June 2026</div>
+  </div>
 
 </main>
 
 <footer>
-  <p><strong>Cedar Creek Lake Data Center Watch</strong></p>
-  <p style="margin-top: 8px;">Community research and public records advocacy · Cedar Creek Lake area, Texas<br>
-  All facts sourced to primary public documents · Last updated June 2026</p>
-  <p style="margin-top: 12px; font-size: 11px;">This site contains factual information from public records. It does not constitute legal advice.<br>For source documents or questions, contact the site administrator.</p>
+  <div class="footer-inner">
+    <strong>Our Lake. Our Voice.</strong>
+    <p>Cedar Creek Lake community research and public records advocacy &middot; Cedar Creek Lake area, Texas</p>
+    <p>All facts sourced to primary public documents &middot; Last updated June 2026</p>
+    <p style="margin-top:12px;"><a href="mailto:info@ourlakeourvoice.com" style="color:rgba(255,255,255,0.4);">info@ourlakeourvoice.com</a></p>
+    <p style="margin-top:8px;font-size:11px;">This site contains factual information from public records only. It does not constitute legal advice.</p>
+  </div>
 </footer>
 
 </body>
