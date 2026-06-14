@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,31 +9,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap');
 
 :root {
-–deep:#0a1929; –steel:#1e4976; –shore:#2d7db3;
-–gold:#c9962a; –pale:#d6e8f4; –white:#fff;
-–muted:#8aabbc; –rust:#b84a2e; –green:#1e6b3c;
-–cream:#f7f4ef;
+  --deep:#0a1929; --steel:#1e4976; --shore:#2d7db3;
+  --gold:#c9962a; --pale:#d6e8f4; --white:#fff;
+  --muted:#8aabbc; --rust:#b84a2e; --green:#1e6b3c;
+  --cream:#f7f4ef;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:“DM Sans”,sans-serif;background:#0a1929;color:#fff;font-size:16px;line-height:1.7;}
+body{font-family:"DM Sans",sans-serif;background:#0a1929;color:#fff;font-size:16px;line-height:1.7;}
 
 .hero{min-height:100vh;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 24px;}
 .hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,25,41,0.3) 0%,rgba(10,25,41,0.15) 40%,rgba(10,25,41,0.75) 100%),linear-gradient(135deg,#0a1929 0%,#1e4976 30%,#2d7db3 55%,#1e4976 75%,#0a1929 100%);z-index:0;}
-.hero-bg::after{content:””;position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(180deg,transparent 0%,rgba(45,125,179,0.1) 50%,rgba(10,25,41,0.9) 100%);}
+.hero-bg::after{content:"";position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(180deg,transparent 0%,rgba(45,125,179,0.1) 50%,rgba(10,25,41,0.9) 100%);}
 .light-glow{position:absolute;bottom:30%;left:50%;transform:translateX(-50%);width:3px;height:3px;background:#fff;border-radius:50%;box-shadow:0 0 6px 2px rgba(255,255,255,0.9),0 0 20px 6px rgba(255,220,150,0.5),0 0 60px 20px rgba(255,200,100,0.15),0 20px 80px 10px rgba(255,200,100,0.08);z-index:1;}
 .light-reflection{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:2px;height:30%;background:linear-gradient(180deg,rgba(255,200,100,0.08) 0%,transparent 100%);z-index:1;}
 .hero-content{position:relative;z-index:10;text-align:center;max-width:760px;width:100%;}
-.hero-content::before{content:””;display:block;width:48px;height:2px;background:#c9962a;margin:0 auto 28px;}
+.hero-content::before{content:"";display:block;width:48px;height:2px;background:#c9962a;margin:0 auto 28px;}
 .eyebrow{font-size:10px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:#8aabbc;margin-bottom:16px;}
-.hero h1{font-family:“Playfair Display”,serif;font-size:clamp(48px,9vw,84px);font-weight:900;color:#fff;line-height:1.0;margin-bottom:8px;}
+.hero h1{font-family:"Playfair Display",serif;font-size:clamp(48px,9vw,84px);font-weight:900;color:#fff;line-height:1.0;margin-bottom:8px;}
 .hero h1 em{font-style:italic;font-weight:400;color:#d6e8f4;}
 .hero-sub{font-size:clamp(14px,2.5vw,17px);color:rgba(255,255,255,0.65);line-height:1.65;font-weight:300;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto;}
 .hero-sub em{color:rgba(255,255,255,0.9);font-style:normal;font-weight:500;}
 .hero-deadline{background:rgba(184,74,46,0.2);border:1px solid rgba(184,74,46,0.4);border-left:3px solid #b84a2e;padding:14px 24px;display:inline-block;margin-bottom:32px;}
 .hdl-label{font-size:9px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:#b84a2e;margin-bottom:3px;}
-.hdl-date{font-family:“Playfair Display”,serif;font-size:22px;font-weight:900;color:#fff;margin-bottom:2px;}
+.hdl-date{font-family:"Playfair Display",serif;font-size:22px;font-weight:900;color:#fff;margin-bottom:2px;}
 .hdl-note{font-size:10px;color:rgba(255,255,255,0.55);}
 .hero-nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
 .hero-nav a{display:inline-block;padding:10px 20px;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.8);transition:all 0.2s;}
@@ -42,7 +41,7 @@ body{font-family:“DM Sans”,sans-serif;background:#0a1929;color:#fff;font-siz
 .hero-nav a.primary{background:#c9962a;border-color:#c9962a;color:#0a1929;}
 .hero-nav a.primary:hover{background:#d4a535;}
 .scroll-hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:10;font-size:9px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(255,255,255,0.25);display:flex;flex-direction:column;align-items:center;gap:8px;}
-.scroll-hint::after{content:“↓”;font-size:14px;color:rgba(255,255,255,0.2);}
+.scroll-hint::after{content:"↓";font-size:14px;color:rgba(255,255,255,0.2);}
 
 nav{background:#1e4976;position:sticky;top:0;z-index:100;border-bottom:2px solid #2d7db3;}
 nav ul{max-width:960px;margin:0 auto;padding:0 24px;list-style:none;display:flex;flex-wrap:wrap;gap:0;}
@@ -52,9 +51,9 @@ nav a:hover{color:#fff;background:rgba(255,255,255,0.1);}
 main{max-width:960px;margin:0 auto;padding:0 24px;background:#0a1929;}
 section{padding:56px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
 section:last-child{border-bottom:none;}
-h2{font-family:“Playfair Display”,serif;font-size:32px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.2;}
+h2{font-family:"Playfair Display",serif;font-size:32px;font-weight:700;color:#fff;margin-bottom:8px;line-height:1.2;}
 .section-rule{width:32px;height:2px;background:#c9962a;margin-bottom:24px;}
-h3{font-family:“Playfair Display”,serif;font-size:20px;color:#fff;margin:28px 0 10px;font-weight:700;}
+h3{font-family:"Playfair Display",serif;font-size:20px;color:#fff;margin:28px 0 10px;font-weight:700;}
 p{margin-bottom:16px;color:rgba(255,255,255,0.82);}
 p:last-child{margin-bottom:0;}
 a{color:#2d7db3;}
@@ -68,8 +67,8 @@ em{font-style:italic;}
 
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:24px 0;}
 .stat-card{background:#1e4976;padding:20px 16px;position:relative;}
-.stat-card::before{content:””;position:absolute;top:0;left:0;right:0;height:3px;background:#c9962a;}
-.stat-num{font-family:“Playfair Display”,serif;font-size:30px;font-weight:900;color:#d6e8f4;line-height:1;margin-bottom:6px;}
+.stat-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:#c9962a;}
+.stat-num{font-family:"Playfair Display",serif;font-size:30px;font-weight:900;color:#d6e8f4;line-height:1;margin-bottom:6px;}
 .stat-label{font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:4px;}
 .stat-src{font-size:10px;color:rgba(255,255,255,0.25);font-style:italic;}
 
@@ -78,7 +77,7 @@ em{font-style:italic;}
 .demand-step.current{border-top-color:#1e6b3c;background:rgba(30,107,60,0.12);}
 .demand-step.questioned{border-top-color:#c9962a;}
 .ds-date{font-size:8px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#8aabbc;margin-bottom:5px;}
-.ds-num{font-family:“Playfair Display”,serif;font-size:22px;font-weight:900;color:#d6e8f4;line-height:1;margin-bottom:4px;}
+.ds-num{font-family:"Playfair Display",serif;font-size:22px;font-weight:900;color:#d6e8f4;line-height:1;margin-bottom:4px;}
 .ds-num.green{color:#4caf78;}
 .ds-label{font-size:8.5px;color:rgba(255,255,255,0.5);line-height:1.35;}
 
@@ -89,6 +88,8 @@ em{font-style:italic;}
 .callout.gold .callout-label{color:#c9962a;}
 .callout.green{border-left-color:#4caf78;}
 .callout.green .callout-label{color:#4caf78;}
+.callout.rust{border-left-color:#b84a2e;}
+.callout.rust .callout-label{color:#b84a2e;}
 
 .pathways{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:20px 0;}
 .pathway{padding:16px;border-left:4px solid #2d7db3;}
@@ -99,22 +100,29 @@ em{font-style:italic;}
 .pathway.blocked .pw-status{background:#b84a2e;color:#fff;}
 .pathway.watch .pw-status{background:#c9962a;color:#fff;}
 .pathway.open .pw-status{background:#2d7db3;color:#fff;}
-.pw-title{font-family:“Playfair Display”,serif;font-size:15px;font-weight:700;color:#fff;line-height:1.25;margin-bottom:6px;}
+.pw-title{font-family:"Playfair Display",serif;font-size:15px;font-weight:700;color:#fff;line-height:1.25;margin-bottom:6px;}
 .pw-body{font-size:13px;color:rgba(255,255,255,0.65);line-height:1.5;}
 .pw-body strong{color:#fff;font-weight:600;}
+
+.impaired-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0;}
+.impaired-item{background:rgba(184,74,46,0.1);border:1px solid rgba(184,74,46,0.25);border-left:3px solid #b84a2e;padding:14px 16px;}
+.imp-seg{font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#b84a2e;margin-bottom:4px;}
+.imp-name{font-size:14px;font-weight:700;color:#fff;margin-bottom:5px;font-family:"Playfair Display",serif;}
+.imp-detail{font-size:12px;color:rgba(255,255,255,0.65);line-height:1.5;}
+.imp-detail strong{color:rgba(255,255,255,0.85);}
 
 .entity-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:20px 0;}
 .entity-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-top:3px solid #1e4976;padding:16px;}
 .entity-card.highlight{border-top-color:#c9962a;background:rgba(201,150,42,0.06);}
 .ent-role{font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#8aabbc;margin-bottom:4px;}
-.ent-name{font-family:“Playfair Display”,serif;font-size:16px;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.2;}
+.ent-name{font-family:"Playfair Display",serif;font-size:16px;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.2;}
 .ent-detail{font-size:13px;color:#8aabbc;line-height:1.45;}
 .ent-src{font-size:11px;color:rgba(255,255,255,0.25);font-style:italic;margin-top:5px;}
 
 .timeline{margin:24px 0;}
 .tl-item{display:grid;grid-template-columns:110px 1fr;gap:20px;margin-bottom:20px;align-items:start;}
 .tl-date{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:#2d7db3;padding-top:2px;text-align:right;border-right:2px solid rgba(255,255,255,0.1);padding-right:16px;}
-.tl-content strong{display:block;color:#fff;margin-bottom:3px;font-family:“Playfair Display”,serif;font-size:16px;}
+.tl-content strong{display:block;color:#fff;margin-bottom:3px;font-family:"Playfair Display",serif;font-size:16px;}
 .tl-content p{font-size:14px;color:#8aabbc;margin:0;}
 
 .doc-list{margin:20px 0;}
@@ -134,31 +142,31 @@ em{font-style:italic;}
 .ac-badge{font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:2px 8px;margin-bottom:8px;display:inline-block;color:#fff;}
 .action-card.priority .ac-badge{background:#b84a2e;}
 .action-card:not(.priority) .ac-badge{background:#1e4976;}
-.action-card h3{font-family:“Playfair Display”,serif;font-size:17px;color:#fff;margin:0 0 6px;font-weight:700;}
+.action-card h3{font-family:"Playfair Display",serif;font-size:17px;color:#fff;margin:0 0 6px;font-weight:700;}
 .action-card .when{font-size:12px;font-style:italic;color:#2d7db3;margin-bottom:8px;line-height:1.4;}
 .action-card .why{font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,0.08);line-height:1.5;}
 .action-card .ct{font-size:13px;color:rgba(255,255,255,0.75);line-height:1.7;}
 
 .quote-bar{background:rgba(255,255,255,0.04);border-left:4px solid #c9962a;padding:20px 24px;margin:32px 0;}
-.qm{font-family:“Playfair Display”,serif;font-size:48px;color:#1e4976;line-height:1;float:left;margin-right:12px;margin-top:-8px;}
-.qt{font-family:“Playfair Display”,serif;font-size:15px;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.6;}
+.qm{font-family:"Playfair Display",serif;font-size:48px;color:#1e4976;line-height:1;float:left;margin-right:12px;margin-top:-8px;}
+.qt{font-family:"Playfair Display",serif;font-size:15px;font-style:italic;color:rgba(255,255,255,0.85);line-height:1.6;}
 .qs{font-size:11px;color:#8aabbc;margin-top:8px;clear:both;}
 
 footer{background:#1e4976;padding:32px 24px;text-align:center;border-top:2px solid #2d7db3;}
 footer .footer-inner{max-width:960px;margin:0 auto;}
-footer strong{color:#fff;display:block;font-family:“Playfair Display”,serif;font-size:18px;margin-bottom:8px;}
+footer strong{color:#fff;display:block;font-family:"Playfair Display",serif;font-size:18px;margin-bottom:8px;}
 footer p{font-size:12px;color:rgba(255,255,255,0.4);margin-bottom:4px;}
 
 @media(max-width:600px){
-.pathways{grid-template-columns:1fr;}
-.entity-grid{grid-template-columns:1fr;}
-.action-grid{grid-template-columns:1fr;}
-.demand-grid{grid-template-columns:1fr 1fr;}
-.tl-item{grid-template-columns:80px 1fr;}
-nav a{padding:11px 10px;font-size:10px;}
+  .pathways{grid-template-columns:1fr;}
+  .entity-grid{grid-template-columns:1fr;}
+  .action-grid{grid-template-columns:1fr;}
+  .demand-grid{grid-template-columns:1fr 1fr;}
+  .impaired-grid{grid-template-columns:1fr;}
+  .tl-item{grid-template-columns:80px 1fr;}
+  nav a{padding:11px 10px;font-size:10px;}
 }
 </style>
-
 </head>
 <body>
 
@@ -179,6 +187,7 @@ nav a{padding:11px 10px;font-size:10px;}
       <a href="#situation">The Situation</a>
       <a href="#numbers">The Numbers</a>
       <a href="#pathways">Water Pathways</a>
+      <a href="#environment">Environment</a>
       <a href="#resolution">HC Resolution</a>
       <a href="#entities">Who&rsquo;s Involved</a>
       <a href="#documents">Documents</a>
@@ -193,6 +202,7 @@ nav a{padding:11px 10px;font-size:10px;}
     <li><a href="#situation">Situation</a></li>
     <li><a href="#numbers">Numbers</a></li>
     <li><a href="#pathways">Pathways</a></li>
+    <li><a href="#environment">Environment</a></li>
     <li><a href="#resolution">HC Resolution</a></li>
     <li><a href="#timeline">Timeline</a></li>
     <li><a href="#entities">Entities</a></li>
@@ -302,6 +312,71 @@ nav a{padding:11px 10px;font-size:10px;}
     </div>
   </section>
 
+  <!-- ENVIRONMENTAL SECTION - NEW -->
+  <section id="environment">
+    <h2>The Environmental Record</h2>
+    <div class="section-rule"></div>
+    <p>Cedar Creek Reservoir is not simply a water source under stress from drought. Texas Commission on Environmental Quality records confirm the reservoir and its tributaries are officially impaired water bodies under federal Clean Water Act standards &mdash; and have been for years. Adding industrial water withdrawals and discharge to this system makes state-required remediation harder, not easier.</p>
+
+    <div class="callout rust" style="margin-bottom:24px;">
+      <span class="callout-label">&#9888; Cedar Creek Reservoir Is Officially Impaired &mdash; TCEQ 2026</span>
+      <p>The TCEQ Commission adopted the 2026 Texas 303(d) List of Impaired Waters on <strong>April 1, 2026</strong> &mdash; five weeks before Diode Ventures filed its engineering response seeking water from this same reservoir. Cedar Creek Reservoir (Segment 0818) is listed as impaired for <strong>pH in seven separate assessment units.</strong> Multiple tributaries feeding the reservoir are listed as impaired for bacterial contamination. The TCEQ Watershed Viewer classifies the Key Ranch Road site as located within the <strong>Cedar Creek Reservoir&ndash;Cedar Creek Watershed, Trinity River Basin.</strong></p>
+    </div>
+
+    <h3>Documented Impairments &mdash; Cedar Creek Reservoir Watershed</h3>
+    <p style="font-size:13px;color:#8aabbc;font-style:italic;margin-bottom:16px;">Source: TCEQ 2024 and 2026 Texas Integrated Report &mdash; 303(d) List (Category 5) &middot; tceq.texas.gov/waterquality/assessment/2026-integrated-report &middot; 2026 list adopted April 1, 2026</p>
+
+    <div class="impaired-grid">
+      <div class="impaired-item">
+        <div class="imp-seg">Segment 0818 &mdash; Cedar Creek Reservoir</div>
+        <div class="imp-name">Cedar Creek Reservoir &mdash; The Lake Itself</div>
+        <div class="imp-detail"><strong>pH impairment</strong> in seven assessment units (0818_02, _03, _05, _07, _08, _09, _12). First listed 2002. Category 5b. pH imbalance indicates chemical stress in the reservoir water column. The lake supplying 2.3 million people is officially impaired.</div>
+      </div>
+      <div class="impaired-item">
+        <div class="imp-seg">Segment 0604A &mdash; Cedar Creek</div>
+        <div class="imp-name">Cedar Creek</div>
+        <div class="imp-detail"><strong>Bacteria in water (Recreation Use)</strong> &mdash; first listed 2000, Category 5c.<br><strong>Depressed dissolved oxygen</strong> &mdash; first listed 2020, Category 5c. Low oxygen levels indicate an ecologically stressed system. Key Ranch Road drains directly into Cedar Creek per TPWD Watershed Viewer.</div>
+      </div>
+      <div class="impaired-item">
+        <div class="imp-seg">Segment 0818B &mdash; Cedar Creek Above Reservoir</div>
+        <div class="imp-name">Cedar Creek Above Cedar Creek Reservoir</div>
+        <div class="imp-detail"><strong>Bacteria in water (Recreation Use)</strong> &mdash; first listed 2018, Category 5b. Bacterial contamination in Cedar Creek immediately above the reservoir intake point.</div>
+      </div>
+      <div class="impaired-item">
+        <div class="imp-seg">Segments 0818C, 0818D, 0818F, 0818G, 0818H, 0818I</div>
+        <div class="imp-name">Six Reservoir Tributaries</div>
+        <div class="imp-detail"><strong>Kings Creek, Lacy Fork, Clear Creek, North Twin Creek, South Twin Creek, Caney Creek</strong> &mdash; all impaired for <strong>bacteria</strong>. Four of these six listings are new in 2024&ndash;2026, meaning water quality in the Cedar Creek Reservoir watershed is getting worse, not better.</div>
+      </div>
+    </div>
+
+    <h3>What Category 5 Means</h3>
+    <p>A Category 5 listing is the most serious classification in the Texas Integrated Report. It means the water body is officially impaired &mdash; not meeting water quality standards &mdash; and requires a <strong>Total Maximum Daily Load (TMDL)</strong> study to determine how much of each pollutant the water body can receive while still meeting standards. TCEQ regulations governing permits to discharge into 303(d)-listed water bodies require additional scrutiny under RG-194 procedures.</p>
+
+    <h3>Three Documented Environmental Concerns From This Project</h3>
+
+    <div class="callout rust">
+      <span class="callout-label">1. Industrial Wastewater Discharge Into the Trinity River</span>
+      <p>Diode Ventures&rsquo; own May 4, 2026 engineering questionnaire response confirms: <em>&ldquo;Wastewater from the Data Center shall be pre-treated prior to entering the existing WCC MUD sanitary sewer system. The waste will ultimately terminate at WCC MUD&rsquo;s existing WWTP and then discharged into the Trinity River.&rdquo;</em> Industrial discharge from a natural gas data center into a river system already feeding an impaired reservoir has not been permitted, studied, or publicly reviewed.</div>
+    </div>
+
+    <div class="callout rust" style="margin-top:12px;">
+      <span class="callout-label">2. Natural Gas Power Generation &mdash; Air Quality and Water Consumption</span>
+      <p>Diode&rsquo;s engineering response confirms on-site natural gas power generation at 80&ndash;150 megawatts continuous. The Environmental and Energy Study Institute documents that natural gas data center facilities can cause significant local air quality deterioration. A University of California / VCU study found direct on-site generation at comparable facilities causes up to $99 million annually in health-related damages in nearby communities. Air quality permits, combustion emissions, and power generation cooling water requirements have not been publicly quantified or permitted for this project.</p>
+    </div>
+
+    <div class="callout rust" style="margin-top:12px;">
+      <span class="callout-label">3. Adding Industrial Load to an Already Impaired Watershed</span>
+      <p>Cedar Creek Reservoir is already on TCEQ&rsquo;s 303(d) list requiring remediation. Six tributary impairments are recent &mdash; four listed 2024 or newer. Any new industrial water withdrawal and discharge into this watershed affects the TMDL calculations TCEQ must complete to return these water bodies to compliance. The community &mdash; and TCEQ &mdash; deserve a formal environmental impact assessment before any industrial water contract is approved.</p>
+    </div>
+
+    <div class="callout green" style="margin-top:20px;">
+      <span class="callout-label">Watershed Confirmation &mdash; TPWD Primary Source</span>
+      <p>The Texas Parks and Wildlife Department Texas Watershed Viewer classifies the Key Ranch Road site as: <strong>Sub-Watershed: Caney Creek&ndash;Cedar Creek &middot; Watershed: Cedar Creek Reservoir&ndash;Cedar Creek &middot; River Sub Basin: Cedar &middot; River Basin: Trinity River Basin.</strong> Any runoff, discharge, or water activity at Key Ranch Road flows directly into Cedar Creek Reservoir. Source: TPWD Texas Watershed Viewer, accessed June 2026.</p>
+    </div>
+
+    <p style="font-size:13px;color:#8aabbc;margin-top:20px;font-style:italic;">Sources: TCEQ 2024 &amp; 2026 Texas Integrated Report 303(d) List &middot; Diode Ventures engineering questionnaire response 5/4/26 &middot; TPWD Texas Watershed Viewer June 2026 &middot; Environmental and Energy Study Institute &middot; University of California/VCU air quality study</p>
+  </section>
+
   <section id="resolution">
     <h2>Henderson County Has Already Acted</h2>
     <div class="section-rule"></div>
@@ -324,10 +399,26 @@ nav a{padding:11px 10px;font-size:10px;}
       <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:8px;">On Legislative Action</p>
       <p style="font-size:15px;color:rgba(255,255,255,0.82);margin:0;">The resolution calls for a halt to new AI data centers pending impact assessments and urges state leadership to grant local governments more authority over infrastructure planning.</p>
     </div>
-    <h3>The Hill County Warning</h3>
-    <p>Hill County commissioners passed a one-year moratorium on data center construction in May 2026. Within weeks, developer RCM Hill LLC filed a federal lawsuit arguing the moratorium was illegal under Texas law. On June 4, 2026, Hill County unanimously rescinded the moratorium. One commissioner said: <em>&ldquo;Unfortunately, we tried.&rdquo;</em></p>
-    <p>This is why Henderson County&rsquo;s resolution calls for state legislative action rather than a county moratorium &mdash; and why the Texas Legislature&rsquo;s June 23, 2026 hearing on data center water use is critically important.</p>
-    <p style="font-size:13px;color:#8aabbc;margin-top:16px;font-style:italic;">Sources: KETK News &middot; Mabank Monitor &middot; CBS19 &middot; KLTV &middot; Full resolution text pending from Henderson County Clerk.</p>
+    <h3>The Hill County Warning &mdash; And What They Did Next</h3>
+    <p>Hill County commissioners passed a one-year moratorium on data center construction in May 2026. Within weeks, developer RCM Hill LLC filed a $100 million federal lawsuit arguing the moratorium was illegal under Texas law &mdash; because Texas counties cannot zone unincorporated land without state legislative authority. On June 4, 2026, Hill County unanimously rescinded the moratorium. One commissioner said: <em>&ldquo;Unfortunately, we tried.&rdquo;</em></p>
+    <p>But Hill County did not simply surrender. They replaced the moratorium with something potentially more durable: a <strong>Major Industrial Development Review Policy and Checklist</strong> &mdash; a legally grounded framework that imposes mandatory disclosure and scrutiny on developers before construction can begin.</p>
+
+    <div style="background:rgba(30,107,60,0.12);border-left:4px solid #4caf78;padding:18px 22px;margin:16px 0;">
+      <p style="font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#4caf78;margin-bottom:12px;">The Hill County Checklist &mdash; What It Requires</p>
+      <p style="font-size:14px;color:rgba(255,255,255,0.85);margin-bottom:10px;"><strong style="color:#fff;">Water &amp; Resource Disclosure:</strong> Developers must state exact daily and yearly water demand and provide documented proof of impact on local water tables and existing infrastructure.</p>
+      <p style="font-size:14px;color:rgba(255,255,255,0.85);margin-bottom:10px;"><strong style="color:#fff;">Infrastructure &amp; Traffic Impact:</strong> Full traffic volume modeling for construction and operational phases. Bridge capacity assessments for local county bridges.</p>
+      <p style="font-size:14px;color:rgba(255,255,255,0.85);margin-bottom:10px;"><strong style="color:#fff;">Noise &amp; Environmental Modeling:</strong> Decibel projections from continuous cooling systems. Economic assessment of infrastructure strain versus actual tax benefits to the county.</p>
+      <p style="font-size:14px;color:rgba(255,255,255,0.85);margin-bottom:0;"><strong style="color:#fff;">Mandatory Public Transparency:</strong> Large visible signage posted at the proposed site. Certified direct notifications to nearby residents. Required media outreach through local news channels.</p>
+    </div>
+
+    <p>According to legal reporting by K&amp;L Gates (June 10, 2026), the checklist already worked &mdash; several developers who were, in Judge Brassell&rsquo;s words, &ldquo;maybe not the most honest&rdquo; abandoned their plans rather than subject themselves to the disclosure requirements. The checklist is grounded in existing Texas statutes &mdash; unlike a moratorium, it does not ban development but requires full transparency and accountability before any project proceeds.</p>
+
+    <div class="callout gold">
+      <span class="callout-label">The Model for Henderson County and Tool</span>
+      <p>A Hill County-style disclosure and review framework is legally defensible in a way a moratorium is not. Henderson County&rsquo;s resolution already calls for state legislative authority. Tool City Council is examining data center policy. A Texas Legislature that provides explicit statutory authority for county-level development review frameworks would give communities the tools they need before April 15, 2027.</p>
+    </div>
+
+    <p style="font-size:13px;color:#8aabbc;margin-top:16px;font-style:italic;">Sources: KETK News &middot; Mabank Monitor &middot; CBS19 &middot; KLTV &middot; K&amp;L Gates legal update June 10, 2026 &middot; Texas Tribune June 5, 2026 &middot; Full Henderson County resolution text pending from Henderson County Clerk &middot; Full Hill County checklist text requested via Texas PIA to Hill County Clerk.</p>
   </section>
 
   <section id="timeline">
@@ -343,7 +434,8 @@ nav a{padding:11px 10px;font-size:10px;}
       <div class="tl-item"><div class="tl-date">Feb 24, 2026</div><div class="tl-content"><strong>Engineer Asks TRWD About 1.5 MGD</strong><p>Scott Campbell of Velvin &amp; Weeks asks TRWD about water availability for &ldquo;a data center proposed in Tool TX&rdquo; &mdash; initially referencing 1.5 MGD.</p></div></div>
       <div class="tl-item"><div class="tl-date">Mar 25, 2026</div><div class="tl-content"><strong>Formal Water Application Filed</strong><p>WCC MUD files TRWD Prospective Raw Water Customer application. Use type: &ldquo;Data Center.&rdquo; Requests 5.0 MGD. Includes 30-year demand projections.</p></div></div>
       <div class="tl-item"><div class="tl-date">Mar 27, 2026</div><div class="tl-content"><strong>TRWD Questions the 5 MGD Figure</strong><p>Victoria Cason at TRWD requires more data &mdash; noting such requests are &ldquo;almost always estimated too high.&rdquo; Confirms buy-in rate of $1,862,171 per MGD flowing to TRWD.</p></div></div>
-      <div class="tl-item"><div class="tl-date">May 4, 2026</div><div class="tl-content"><strong>Diode Engineering Response &mdash; Dry Cooling</strong><p>Diode responds with dry-cooling technology, approximately 0.8&ndash;1 MGD actual demand, and 80&ndash;150 megawatts continuous power draw using behind-the-meter natural gas generation.</p></div></div>
+      <div class="tl-item"><div class="tl-date">Apr 1, 2026</div><div class="tl-content"><strong>TCEQ Adopts 2026 Impaired Waters List</strong><p>TCEQ Commission formally adopts the 2026 Texas 303(d) List confirming Cedar Creek Reservoir is impaired for pH in seven assessment units. Multiple tributaries impaired for bacteria. Five weeks later Diode files engineering response seeking water from this same impaired reservoir.</p></div></div>
+      <div class="tl-item"><div class="tl-date">May 4, 2026</div><div class="tl-content"><strong>Diode Engineering Response &mdash; Dry Cooling</strong><p>Diode responds with dry-cooling technology, approximately 0.8&ndash;1 MGD actual demand, and 80&ndash;150 megawatts continuous power draw using behind-the-meter natural gas generation. Confirms wastewater will discharge into Trinity River via WCC MUD treatment plant.</p></div></div>
       <div class="tl-item"><div class="tl-date">May 2026</div><div class="tl-content"><strong>Henderson County Commissioners Resolution</strong><p>Packed courthouse &mdash; largest crowd in Judge McKinney&rsquo;s 28 years. Commissioners pass formal resolution opposing high-volume water consumption data centers in water-constrained regions. Calls for state legislative action.</p></div></div>
       <div class="tl-item"><div class="tl-date">May 21, 2026</div><div class="tl-content"><strong>Dual Suspensions &mdash; Same Day</strong><p>WCC MUD passes temporary suspension (expires April 15, 2027). NTVGCD passes Resolution 2026-001 groundwater moratorium (expires October 1, 2026). Both passed same day under community pressure.</p></div></div>
       <div class="tl-item"><div class="tl-date">Jun 9, 2026</div><div class="tl-content"><strong>Surveyors Observed On Site</strong><p>SAM LLC professional survey trucks observed at Key Ranch Road site. Survey work precedes deed transfer, financing, or permitting. Project actively advancing.</p></div></div>
@@ -419,11 +511,13 @@ nav a{padding:11px 10px;font-size:10px;}
       <div class="doc-item"><div class="doc-icon">&#128196;</div><div class="doc-info"><div class="doc-title">Henderson County Instrument No. 2025-00011938</div><div class="doc-meta">Memorandum of Real Estate Purchase Option Agreement &middot; Gray Bear Peak Holdings LLC &middot; Recorded August 20, 2025</div></div><span class="doc-badge tier1">Tier 1</span></div>
       <div class="doc-item"><div class="doc-icon">&#128196;</div><div class="doc-info"><div class="doc-title">Henderson County Instrument No. 2025-00018559</div><div class="doc-meta">Special Warranty Deed &middot; Lists four TCWCID No. 1 covenants as encumbrances &middot; Recorded December 31, 2025</div></div><span class="doc-badge tier1">Tier 1</span></div>
       <div class="doc-item"><div class="doc-icon">&#128203;</div><div class="doc-info"><div class="doc-title">WCC MUD TRWD Prospective Raw Water Customer Application</div><div class="doc-meta">Dated March 25, 2026 &middot; Use type: &ldquo;Data Center&rdquo; &middot; 5.0 MGD request &middot; 30-year demand projections</div></div><span class="doc-badge tier1">Tier 1</span></div>
-      <div class="doc-item"><div class="doc-icon">&#9993;</div><div class="doc-info"><div class="doc-title">TRWD&ndash;WCC MUD Email Correspondence</div><div class="doc-meta">February 24 &ndash; March 27, 2026 &middot; Victoria Cason (TRWD), Scott Campbell (Velvin &amp; Weeks), Kenneth Malin (WCC MUD) &middot; Confirms buy-in rate, TRWD skepticism of 5 MGD</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#9993;</div><div class="doc-info"><div class="doc-title">TRWD&ndash;WCC MUD Email Correspondence</div><div class="doc-meta">February 24 &ndash; March 27, 2026 &middot; Victoria Cason (TRWD), Scott Campbell (Velvin &amp; Weeks), Kenneth Malin (WCC MUD) &middot; Confirms buy-in rate, TRWD skepticism of 5 MGD, Trinity River discharge confirmation</div></div><span class="doc-badge tier1">Tier 1</span></div>
       <div class="doc-item"><div class="doc-icon">&#9878;</div><div class="doc-info"><div class="doc-title">TCWCID No. 1 Recorded Covenants &mdash; Four Instruments</div><div class="doc-meta">Henderson County Deed Records &middot; Vol. 588/495, 588/543, 597/36, 1061/135 &amp; 144 &middot; Water use restricted to irrigation and stock water only</div></div><span class="doc-badge tier1">Tier 1</span></div>
       <div class="doc-item"><div class="doc-icon">&#128220;</div><div class="doc-info"><div class="doc-title">NTVGCD Resolution and Order No. 2026-001</div><div class="doc-meta">Adopted May 21, 2026 &middot; Groundwater drilling permit moratorium through at least October 1, 2026</div></div><span class="doc-badge tier1">Tier 1</span></div>
       <div class="doc-item"><div class="doc-icon">&#9878;</div><div class="doc-info"><div class="doc-title">Final Judgment and Permanent Injunction &mdash; Sanderson Farms et al. v. NTVGCD</div><div class="doc-meta">Cause No. DCCV25-5642-369 &middot; 369th Judicial District, Anderson County &middot; Signed October 23, 2025</div></div><span class="doc-badge tier1">Tier 1</span></div>
       <div class="doc-item"><div class="doc-icon">&#127962;</div><div class="doc-info"><div class="doc-title">Delaware Secretary of State &mdash; Gray Bear Peak Holdings LLC</div><div class="doc-meta">File No. 3920904 &middot; Formation date: June 12, 2024 &middot; Registered agent: The Corporation Trust Company, Wilmington DE</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#128200;</div><div class="doc-info"><div class="doc-title">TCEQ 2026 Texas Integrated Report &mdash; 303(d) List of Impaired Waters</div><div class="doc-meta">Adopted April 1, 2026 &middot; Cedar Creek Reservoir (Segment 0818) impaired for pH in 7 assessment units &middot; Cedar Creek (0604A) impaired for bacteria and dissolved oxygen &middot; Six tributaries impaired &middot; tceq.texas.gov/waterquality/assessment/2026-integrated-report</div></div><span class="doc-badge tier1">Tier 1</span></div>
+      <div class="doc-item"><div class="doc-icon">&#127754;</div><div class="doc-info"><div class="doc-title">TPWD Texas Watershed Viewer &mdash; Key Ranch Road Classification</div><div class="doc-meta">Sub-Watershed: Caney Creek&ndash;Cedar Creek &middot; Watershed: Cedar Creek Reservoir&ndash;Cedar Creek &middot; River Sub Basin: Cedar &middot; River Basin: Trinity River Basin &middot; Accessed June 2026</div></div><span class="doc-badge tier1">Tier 1</span></div>
       <div class="doc-item"><div class="doc-icon">&#128203;</div><div class="doc-info"><div class="doc-title">Henderson County Commissioners Court Resolution</div><div class="doc-meta">May 2026 &middot; Formally opposes high-volume water consumption data centers in water-constrained regions &middot; Calls for state legislative action &middot; Primary source document pending from clerk</div></div><span class="doc-badge summary">Tier 2</span></div>
       <div class="doc-item"><div class="doc-icon">&#128203;</div><div class="doc-info"><div class="doc-title">WCC MUD FOIA Response Summary &mdash; 73 Pages</div><div class="doc-meta">Internal WCC MUD&ndash;Diode Ventures communications April 2025 &ndash; May 2026 &middot; Full document being obtained</div></div><span class="doc-badge summary">Tier 2 &mdash; Summary</span></div>
     </div>
@@ -466,7 +560,7 @@ nav a{padding:11px 10px;font-size:10px;}
         <div class="ac-badge">July 7 &mdash; Kaufman</div>
         <h3>Kaufman Forward P&amp;Z Meeting</h3>
         <div class="when">6:00 PM &middot; 209 S. Washington Street, Kaufman TX &middot; Highway 175 corridor land use</div>
-        <div class="why">The Future Land Use Plan being adopted July 7 governs the Highway 175 corridor approaching Cedar Creek Lake from Dallas for the next 20 years.</div>
+        <div class="why">The Future Land Use Plan being adopted July 7 governs the Highway 175 corridor approaching Cedar Creek Lake from Dallas for the next 20 years. Kaufman County may also have dormant watershed protection authority under Local Government Code Chapter 231 Subchapter L &mdash; ask the commissioners.</div>
         <div class="ct">&#128222; Kaufman Planning: (972) 932-2216<br>&#127760; kaufmantx.portal.civicclerk.com<br>Agenda posted after July 2</div>
       </div>
       <div class="action-card">
